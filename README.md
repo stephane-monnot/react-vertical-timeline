@@ -1,6 +1,6 @@
 [![build status](https://secure.travis-ci.org/stephane-monnot/react-vertical-timeline.svg)](http://travis-ci.org/stephane-monnot/react-vertical-timeline) [![bitHound Score](https://www.bithound.io/github/stephane-monnot/react-vertical-timeline/badges/score.svg)](https://www.bithound.io/github/stephane-monnot/react-vertical-timeline) [![Dependency Status](https://david-dm.org/stephane-monnot/react-vertical-timeline.svg)](https://david-dm.org/stephane-monnot/react-vertical-timeline)
 
-# react-vertical-timeline - Vertical timeline for React.js
+# react-vertical-timeline-component - Vertical timeline for React.js
 
 ## Highlighting Demo for the Site
 
@@ -56,5 +56,5 @@
 
 ## License
 
-*react-vertical-timeline* is available under MIT. See LICENSE for more details.
+*react-vertical-timeline-component* is available under MIT. See LICENSE for more details.
 
