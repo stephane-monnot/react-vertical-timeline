@@ -1,0 +1,36 @@
+.vertical-timeline {
+  width: 100%;
+  max-width: 1170px;
+  margin: 2em auto;
+  position: relative;
+  padding: 2em 0;
+}
+.vertical-timeline::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.vertical-timeline::before {
+  /* this is the vertical line */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 4px;
+  background: white;
+}
+
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 90%;
+  }
+  .vertical-timeline:before {
+    left: 50%;
+    margin-left: -2px;
+  }
+}
