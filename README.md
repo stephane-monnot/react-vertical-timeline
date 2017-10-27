@@ -2,6 +2,11 @@
 
 # react-vertical-timeline-component - Vertical timeline for React.js
 
+## Full documentation & Demo
+
+[React Vertical Timeline documentation](https://stephane-monnot.github.io/react-vertical-timeline/)
+
+
 ## Install
 
 ```code
