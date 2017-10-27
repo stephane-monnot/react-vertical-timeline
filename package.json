@@ -11,7 +11,7 @@
     "test:watch": "jest --watch",
     "test:lint": "eslint . --ignore-path .gitignore",
     "gh-pages": "catalog build docs",
-    "gh-pages:deploy": "gh-pages -d docs/build",
+    "gh-pages:deploy": "replace '\"/static/' '\"./static/' docs/build/* && gh-pages -d docs/build",
     "dist:es6": "del-cli ./dist-es6 && cross-env BABEL_ENV=es6 babel ./src --out-dir ./dist-es6",
     "dist:modules": "del-cli ./dist-modules && cross-env BABEL_ENV=modules babel ./src --out-dir ./dist-modules",
     "preversion": "npm run test",
@@ -51,6 +51,7 @@
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.0.0",
     "react-github-corner": "^1.0.0",
+    "replace": "^0.3.0",
     "rimraf": "^2.6.2",
     "sync-exec": "^0.6.2",
     "webpack": "^3.6.0"
@@ -68,7 +69,9 @@
   },
   "jest": {
     "collectCoverage": true,
-    "setupFiles": ["<rootDir>/__tests__/shim.js"],
+    "setupFiles": [
+      "<rootDir>/__tests__/shim.js"
+    ],
     "moduleFileExtensions": [
       "js",
       "jsx",
