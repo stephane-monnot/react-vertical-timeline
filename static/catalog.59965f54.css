@@ -1524,7 +1524,7 @@ striping:
 
 /* TODO: insert main styles of your demo here */
 .vertical-timeline {
-  width: 100%;
+  width: 95%;
   max-width: 1170px;
   margin: 2em auto;
   position: relative;
@@ -1861,4 +1861,4 @@ striping:
     transform: translateX(0);
   }
 }
-/*# sourceMappingURL=catalog.a7686f3b.css.map*/
+/*# sourceMappingURL=catalog.59965f54.css.map*/
