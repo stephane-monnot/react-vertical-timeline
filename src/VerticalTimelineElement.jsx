@@ -53,7 +53,7 @@ VerticalTimelineElement.propTypes = {
   subtitle: PropTypes.string,
   content: PropTypes.string,
   icon: PropTypes.object,
-  iconStyle: PropTypes.string,
+  iconStyle: PropTypes.object,
   date: PropTypes.string,
   position: PropTypes.string
 };
