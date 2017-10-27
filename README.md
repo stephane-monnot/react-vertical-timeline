@@ -2,11 +2,21 @@
 
 # react-vertical-timeline-component - Vertical timeline for React.js
 
-## Highlighting Demo for the Site
+## Install
 
-```js
+```code
+$ npm i react-vertical-timeline-component
+```
+
+
+## Usage
+
+```code|lang-jsx
+---
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+
+...
 
 <VerticalTimeline>
     <VerticalTimelineElement
@@ -56,6 +66,38 @@ import 'react-vertical-timeline-component/style.min.css';
     />
 </VerticalTimeline>
 ```
+
+## VerticalTimelineElement Props
+
+### `title={ String }`
+
+Title of the element.
+
+### `subtitle={ String }`
+
+Subtitle of the element.
+
+### `content={ String }`
+
+Content of the element.
+
+### `date={ String }`
+
+Date of the element.
+
+### `iconStyle={ Object }`
+
+Style of the element's icon.
+
+### `icon={ String }`
+
+Icon of the element.
+
+
+## Showcase
+
+* [My resume (Stéphane Monnot)](https://stephanemonnot.com/).
+
 
 ## License
 

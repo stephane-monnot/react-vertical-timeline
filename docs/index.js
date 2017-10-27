@@ -96,6 +96,7 @@ ReactDOM.render(
         jsx: props => <ReactSpecimen {...props} />
       }}
       title="React Vertical Timeline"
+
     />
   </div>,
   document.getElementById('catalog')
