@@ -26,7 +26,6 @@ const pages = [
     content: () => (
       <VerticalTimeline>
         <VerticalTimelineElement
-          key="1"
           title="Creative Director"
           subtitle="Miami, FL"
           content="Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
@@ -35,16 +34,30 @@ const pages = [
           icon={<WorkIcon />}
         />
         <VerticalTimelineElement
-          key="2"
           title="Art Director"
           subtitle="San Francisco, CA"
           content="Creative Direction, User Experience, Visual Design, SEO, Online Marketing"
-          date="2006 - 2011"
+          date="2010 - 2011"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<WorkIcon />}
         />
         <VerticalTimelineElement
-          key="3"
+          title="Web Designer"
+          subtitle="Los Angeles, CA"
+          content="User Experience, Visual Design"
+          date="2008 - 2010"
+          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          icon={<WorkIcon />}
+        />
+        <VerticalTimelineElement
+          title="Web Designer"
+          subtitle="San Francisco, CA"
+          content="User Experience, Visual Design"
+          date="2006 - 2008"
+          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          icon={<WorkIcon />}
+        />
+        <VerticalTimelineElement
           title="Content Marketing for Web, Mobile and Social Media"
           subtitle="Online Course"
           content="Strategy, Social Media"
@@ -53,7 +66,6 @@ const pages = [
           icon={<SchoolIcon />}
         />
         <VerticalTimelineElement
-          key="4"
           title="Agile Development Scrum Master"
           subtitle="Certification"
           content="Creative Direction, User Experience, Visual Design"
@@ -62,7 +74,6 @@ const pages = [
           icon={<SchoolIcon />}
         />
         <VerticalTimelineElement
-          key="5"
           title="Bachelor of Science in Interactive Digital Media Visual Imaging"
           subtitle="Bachelor Degree"
           content="Creative Direction, Visual Design"
