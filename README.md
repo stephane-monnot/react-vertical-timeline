@@ -72,6 +72,14 @@ import 'react-vertical-timeline-component/style.min.css';
 </VerticalTimeline>
 ```
 
+
+## VerticalTimelineElement Props
+
+### `animate={ Boolean }`
+
+Enable or disable animations on elements (default: true).
+
+
 ## VerticalTimelineElement Props
 
 ### `title={ String }`
