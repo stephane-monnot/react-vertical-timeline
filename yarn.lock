@@ -565,6 +565,14 @@ babel-helpers@^6.24.1:
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
 
+babel-jest@^16.0.0:
+  version "16.0.0"
+  resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-16.0.0.tgz#348729aea6d624a4774b8a934d07a40dd2cfd640"
+  dependencies:
+    babel-core "^6.0.0"
+    babel-plugin-istanbul "^2.0.0"
+    babel-preset-jest "^16.0.0"
+
 babel-jest@^21.2.0:
   version "21.2.0"
   resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-21.2.0.tgz#2ce059519a9374a2c46f2455b6fbef5ad75d863e"
@@ -604,6 +612,15 @@ babel-plugin-dynamic-import-node@1.0.2:
     babel-template "^6.24.1"
     babel-types "^6.24.1"
 
+babel-plugin-istanbul@^2.0.0:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/babel-plugin-istanbul/-/babel-plugin-istanbul-2.0.3.tgz#266b304b9109607d60748474394676982f660df4"
+  dependencies:
+    find-up "^1.1.2"
+    istanbul-lib-instrument "^1.1.4"
+    object-assign "^4.1.0"
+    test-exclude "^2.1.1"
+
 babel-plugin-istanbul@^4.0.0:
   version "4.1.5"
   resolved "https://registry.yarnpkg.com/babel-plugin-istanbul/-/babel-plugin-istanbul-4.1.5.tgz#6760cdd977f411d3e175bb064f2bc327d99b2b6e"
@@ -611,6 +628,10 @@ babel-plugin-istanbul@^4.0.0:
     find-up "^2.1.0"
     istanbul-lib-instrument "^1.7.5"
     test-exclude "^4.1.1"
+
+babel-plugin-jest-hoist@^16.0.0:
+  version "16.0.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-16.0.0.tgz#b58ca3f770982a7e7c25b5614b2e57e9dafc6e76"
 
 babel-plugin-jest-hoist@^21.2.0:
   version "21.2.0"
@@ -1002,6 +1023,12 @@ babel-preset-flow@^6.23.0:
   resolved "https://registry.yarnpkg.com/babel-preset-flow/-/babel-preset-flow-6.23.0.tgz#e71218887085ae9a24b5be4169affb599816c49d"
   dependencies:
     babel-plugin-transform-flow-strip-types "^6.22.0"
+
+babel-preset-jest@^16.0.0:
+  version "16.0.0"
+  resolved "https://registry.yarnpkg.com/babel-preset-jest/-/babel-preset-jest-16.0.0.tgz#417aabc2d7d93170f43c20ef1ea0145e8f7f2db5"
+  dependencies:
+    babel-plugin-jest-hoist "^16.0.0"
 
 babel-preset-jest@^21.2.0:
   version "21.2.0"
@@ -1593,7 +1620,15 @@ classnames@^2.2.5:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
 
-clean-css@4.1.x:
+clean-css-cli@^4.1.10:
+  version "4.1.10"
+  resolved "https://registry.yarnpkg.com/clean-css-cli/-/clean-css-cli-4.1.10.tgz#83624c9046341421875cc60a2894b382f7ca0ca6"
+  dependencies:
+    clean-css "^4.1.9"
+    commander "2.x"
+    glob "7.x"
+
+clean-css@4.1.x, clean-css@^4.1.9:
   version "4.1.9"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.1.9.tgz#35cee8ae7687a49b98034f70de00c4edd3826301"
   dependencies:
@@ -1687,6 +1722,10 @@ colormin@^1.0.5:
     css-color-names "0.0.4"
     has "^1.0.1"
 
+colors@0.5.x:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/colors/-/colors-0.5.1.tgz#7d0023eaeb154e8ee9fce75dcb923d0ed1667774"
+
 colors@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.1.2.tgz#168a4701756b6a7f51a12ce0c97bfa28c084ed63"
@@ -1697,7 +1736,7 @@ combined-stream@^1.0.5, combined-stream@~1.0.5:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@2.11.x, commander@^2.11.0, commander@~2.11.0:
+commander@2.11.x, commander@2.x, commander@^2.11.0, commander@~2.11.0:
   version "2.11.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.11.0.tgz#157152fd1e7a6c8d98a5b715cf376df928004563"
 
@@ -2884,7 +2923,7 @@ find-cache-dir@^1.0.0:
     make-dir "^1.0.0"
     pkg-dir "^2.0.0"
 
-find-up@^1.0.0:
+find-up@^1.0.0, find-up@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/find-up/-/find-up-1.1.2.tgz#6b2e9822b1a2ce0a60ab64d610eccad53cb24d0f"
   dependencies:
@@ -3094,7 +3133,7 @@ glob-parent@^2.0.0:
   dependencies:
     is-glob "^2.0.0"
 
-glob@^7.0.3, glob@^7.0.5, glob@^7.1.1, glob@^7.1.2:
+glob@7.x, glob@^7.0.3, glob@^7.0.5, glob@^7.1.1, glob@^7.1.2:
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.2.tgz#c19c9df9a028702d678612384a6552404c636d15"
   dependencies:
@@ -3895,7 +3934,7 @@ istanbul-lib-hook@^1.1.0:
   dependencies:
     append-transform "^0.4.0"
 
-istanbul-lib-instrument@^1.4.2, istanbul-lib-instrument@^1.7.5, istanbul-lib-instrument@^1.9.1:
+istanbul-lib-instrument@^1.1.4, istanbul-lib-instrument@^1.4.2, istanbul-lib-instrument@^1.7.5, istanbul-lib-instrument@^1.9.1:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/istanbul-lib-instrument/-/istanbul-lib-instrument-1.9.1.tgz#250b30b3531e5d3251299fdd64b0b2c9db6b558e"
   dependencies:
@@ -3987,6 +4026,12 @@ jest-config@^21.2.1:
     jest-util "^21.2.1"
     jest-validate "^21.2.1"
     pretty-format "^21.2.1"
+
+jest-css-modules@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/jest-css-modules/-/jest-css-modules-1.1.0.tgz#19332cf767618e6052f0900de25e6b8859e65b95"
+  dependencies:
+    babel-jest "^16.0.0"
 
 jest-diff@^21.2.1:
   version "21.2.1"
@@ -4500,6 +4545,10 @@ lowercase-keys@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/lowercase-keys/-/lowercase-keys-1.0.0.tgz#4e3366b39e7f5457e35f1324bdf6f88d0bfc7306"
 
+lru-cache@2:
+  version "2.7.3"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-2.7.3.tgz#6d4524e8b955f95d4f5b58851ce21dd72fb4e952"
+
 lru-cache@^4.0.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-4.1.1.tgz#622e32e82488b49279114a4f9ecf45e7cd6bba55"
@@ -4696,6 +4745,13 @@ minimatch@^3.0.0, minimatch@^3.0.2, minimatch@^3.0.3, minimatch@^3.0.4:
   dependencies:
     brace-expansion "^1.1.7"
 
+minimatch@~0.2.9:
+  version "0.2.14"
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-0.2.14.tgz#c74e780574f63c6f9a090e90efbe6ef53a6a756a"
+  dependencies:
+    lru-cache "2"
+    sigmund "~1.0.0"
+
 minimist@0.0.8:
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
@@ -4827,6 +4883,13 @@ node-pre-gyp@^0.6.36:
     semver "^5.3.0"
     tar "^2.2.1"
     tar-pack "^3.4.0"
+
+nomnom@1.6.x:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/nomnom/-/nomnom-1.6.2.tgz#84a66a260174408fc5b77a18f888eccc44fb6971"
+  dependencies:
+    colors "0.5.x"
+    underscore "~1.4.4"
 
 nopt@^4.0.1:
   version "4.0.1"
@@ -6057,6 +6120,14 @@ repeating@^2.0.0:
   dependencies:
     is-finite "^1.0.0"
 
+replace@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/replace/-/replace-0.3.0.tgz#60081721188658595ab6a794eb7fedcb4c8d39c7"
+  dependencies:
+    colors "0.5.x"
+    minimatch "~0.2.9"
+    nomnom "1.6.x"
+
 request@2.81.0:
   version "2.81.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.81.0.tgz#c6928946a0e06c5f8d6f8a9333469ffda46298a0"
@@ -6380,6 +6451,10 @@ shell-quote@1.6.1:
 shellwords@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/shellwords/-/shellwords-0.1.1.tgz#d6b9181c1a48d397324c84871efbcfc73fc0654b"
+
+sigmund@~1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/sigmund/-/sigmund-1.0.1.tgz#3ff21f198cad2175f9f3b781853fd94d0d19b590"
 
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
@@ -6731,6 +6806,16 @@ term-size@^1.2.0:
   dependencies:
     execa "^0.7.0"
 
+test-exclude@^2.1.1:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/test-exclude/-/test-exclude-2.1.3.tgz#a8d8968e1da83266f9864f2852c55e220f06434a"
+  dependencies:
+    arrify "^1.0.1"
+    micromatch "^2.3.11"
+    object-assign "^4.1.0"
+    read-pkg-up "^1.0.1"
+    require-main-filename "^1.0.1"
+
 test-exclude@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/test-exclude/-/test-exclude-4.1.1.tgz#4d84964b0966b0087ecc334a2ce002d3d9341e26"
@@ -6903,6 +6988,10 @@ uglifyjs-webpack-plugin@^0.4.6:
 uid-number@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/uid-number/-/uid-number-0.0.6.tgz#0ea10e8035e8eb5b8e4449f06da1c730663baa81"
+
+underscore@~1.4.4:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.4.4.tgz#61a6a32010622afa07963bf325203cf12239d604"
 
 unfetch@^3.0.0:
   version "3.0.0"

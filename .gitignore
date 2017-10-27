@@ -3,6 +3,7 @@ dist-es6/
 dist-modules/
 node_modules/
 coverage/
+/.idea/
 npm-debug.log
 .eslintcache
-/.idea/
+style.min.css
