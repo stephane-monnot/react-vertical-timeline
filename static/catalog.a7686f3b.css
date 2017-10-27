@@ -1616,10 +1616,10 @@ striping:
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
   }
-  .vertical-timeline-animate .vertical-timeline-element-icon.is-hidden {
+  .vertical-timeline--animate .vertical-timeline-element-icon.is-hidden {
     visibility: hidden;
   }
-  .vertical-timeline-animate .vertical-timeline-element-icon.bounce-in {
+  .vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
     visibility: visible;
     -webkit-animation: cd-bounce-1 0.6s;
     animation: cd-bounce-1 0.6s;
@@ -1751,10 +1751,13 @@ striping:
     font-size: 16px;
     font-size: 1rem;
   }
-  .vertical-timeline-element:nth-child(even) .vertical-timeline-element-content {
+
+  .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content,
+  .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content {
     float: right;
   }
-  .vertical-timeline-element:nth-child(even) .vertical-timeline-element-content::before {
+  .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content::before,
+  .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content::before {
     top: 24px;
     left: auto;
     right: 100%;
@@ -1762,15 +1765,16 @@ striping:
     border-right-color: white;
   }
 
-  .vertical-timeline-element:nth-child(even) .vertical-timeline-element-content .vertical-timeline-element-date {
+  .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date,
+  .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content .vertical-timeline-element-date {
     left: auto;
     right: 122%;
     text-align: right;
   }
-  .vertical-timeline-animate .vertical-timeline-element-content.is-hidden {
+  .vertical-timeline--animate .vertical-timeline-element-content.is-hidden {
     visibility: hidden;
   }
-  .vertical-timeline-animate .vertical-timeline-element-content.bounce-in {
+  .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
     visibility: visible;
     -webkit-animation: cd-bounce-2 0.6s;
     animation: cd-bounce-2 0.6s;
@@ -1779,7 +1783,8 @@ striping:
 
 @media only screen and (min-width: 1170px) {
   /* inverse bounce effect on even content blocks */
-  .vertical-timeline-animate .vertical-timeline-element:nth-child(even) .vertical-timeline-element-content.bounce-in {
+  .vertical-timeline--animate .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content.bounce-in
+  .vertical-timeline--animate .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content.bounce-in {
     -webkit-animation: cd-bounce-2-inverse 0.6s;
     animation: cd-bounce-2-inverse 0.6s;
   }
@@ -1856,4 +1861,4 @@ striping:
     transform: translateX(0);
   }
 }
-/*# sourceMappingURL=catalog.7075653f.css.map*/
+/*# sourceMappingURL=catalog.a7686f3b.css.map*/
