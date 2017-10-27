@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './VerticalTimeline.css';
 
 class VerticalTimeline extends Component {
   render() {
