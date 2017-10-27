@@ -98,6 +98,10 @@ Style of the element's icon.
 
 Icon of the element.
 
+### `position={ String }`
+
+Position of the element (left or right).
+
 
 ## Showcase
 

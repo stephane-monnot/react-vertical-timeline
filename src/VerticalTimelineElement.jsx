@@ -17,10 +17,20 @@ class VerticalTimelineElement extends Component {
   }
 
   render() {
-    const { id, title, subtitle, content, icon, iconStyle, date } = this.props;
+    const { id, title, subtitle, content, icon, iconStyle, date, position } = this.props;
+
+    let className = 'vertical-timeline-element';
+
+    if (position === 'left') {
+      className += ' vertical-timeline-element--left';
+    }
+
+    if (position === 'right') {
+      className += ' vertical-timeline-element--right';
+    }
 
     return (
-      <div id={id} className="vertical-timeline-element">
+      <div id={id} className={className}>
         <VisibilitySensor onChange={this.onVisibilitySensorChange}>
           <div>
             <span style={iconStyle} className="vertical-timeline-element-icon">{icon}</span>
@@ -44,7 +54,8 @@ VerticalTimelineElement.propTypes = {
   content: PropTypes.string,
   icon: PropTypes.object,
   iconStyle: PropTypes.string,
-  date: PropTypes.string
+  date: PropTypes.string,
+  position: PropTypes.string
 };
 
 export default VerticalTimelineElement;

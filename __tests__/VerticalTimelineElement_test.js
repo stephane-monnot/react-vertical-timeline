@@ -10,4 +10,9 @@ describe('VerticalTimeline', function () {
     const component = renderIntoDocument(<VerticalTimelineElement />);
     findRenderedDOMComponentWithClass(component, 'vertical-timeline-element');
   });
+
+  it('should have the vertical-timeline-element--right classname', function () {
+    const component = renderIntoDocument(<VerticalTimelineElement position="right" />);
+    findRenderedDOMComponentWithClass(component, 'vertical-timeline-element--right');
+  });
 });
