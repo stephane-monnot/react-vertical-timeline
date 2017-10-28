@@ -1522,8 +1522,13 @@ striping:
     z-index: 1000;
 }
 
-/* TODO: insert main styles of your demo here */
-.vertical-timeline {
+.vertical-timeline-element-title {
+    margin: 0;
+}
+
+.vertical-timeline-element-subtitle {
+    margin: 0;
+}.vertical-timeline {
   width: 95%;
   max-width: 1170px;
   margin: 2em auto;
@@ -1693,14 +1698,6 @@ striping:
   line-height: 1.6;
 }
 
-.vertical-timeline-element-title {
-  margin: 0;
-}
-
-.vertical-timeline-element-subtitle {
-  margin: 0;
-}
-
 .vertical-timeline-element-content .vertical-timeline-element-date {
   float: left;
   padding: .8em 0;
@@ -1861,4 +1858,4 @@ striping:
     transform: translateX(0);
   }
 }
-/*# sourceMappingURL=catalog.59965f54.css.map*/
+/*# sourceMappingURL=catalog.3815f8cf.css.map*/
