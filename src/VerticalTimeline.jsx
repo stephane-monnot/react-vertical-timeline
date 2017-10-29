@@ -12,7 +12,6 @@ class VerticalTimeline extends Component {
       className += ' vertical-timeline--animate';
     }
 
-    console.log(className.trim())
     return (
       <div className={className.trim()}>
         {children}
