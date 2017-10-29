@@ -53,6 +53,7 @@
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.0.0",
     "react-github-corner": "^1.0.0",
+    "react-stateless-wrapper": "^1.0.7",
     "replace": "^0.3.0",
     "rimraf": "^2.6.2",
     "sync-exec": "^0.6.2",

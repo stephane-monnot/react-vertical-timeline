@@ -63,8 +63,8 @@ VerticalTimelineElement.defaultProps = {
   id: '',
   children: '',
   className: '',
-  icon: {},
-  iconStyle: {},
+  icon: null,
+  iconStyle: null,
   date: '',
   position: ''
 };
