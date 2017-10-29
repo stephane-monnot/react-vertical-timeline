@@ -18,8 +18,9 @@ class VerticalTimelineElement extends Component {
 
   render() {
     const { id, children, icon, iconStyle, date, position } = this.props;
+    let { className } = this.props;
 
-    let className = 'vertical-timeline-element';
+    className += ' vertical-timeline-element';
 
     if (position === 'left') {
       className += ' vertical-timeline-element--left';
@@ -47,11 +48,25 @@ class VerticalTimelineElement extends Component {
 
 VerticalTimelineElement.propTypes = {
   id: PropTypes.string,
-  children: PropTypes.string,
-  icon: PropTypes.object,
-  iconStyle: PropTypes.object,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]).isRequired,
+  className: PropTypes.string,
+  icon: PropTypes.element,
+  iconStyle: PropTypes.shape({}),
   date: PropTypes.string,
   position: PropTypes.string
+};
+
+VerticalTimelineElement.defaultProps = {
+  id: '',
+  children: '',
+  className: '',
+  icon: {},
+  iconStyle: {},
+  date: '',
+  position: ''
 };
 
 export default VerticalTimelineElement;

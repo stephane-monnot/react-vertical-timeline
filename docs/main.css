@@ -2,4 +2,10 @@
     z-index: 1000;
 }
 
-/* TODO: insert main styles of your demo here */
+.vertical-timeline-element--work .vertical-timeline-element-content {
+    border-top: 3px solid #2196f3;
+}
+
+.vertical-timeline-element--education .vertical-timeline-element-content {
+    border-top: 3px solid #e91e63;
+}

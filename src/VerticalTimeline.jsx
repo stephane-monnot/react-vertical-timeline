@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-class VerticalTimeline extends Component {
-  render() {
-    const { animate, children } = this.props;
-    let className = 'vertical-timeline';
+const VerticalTimeline = (props) => {
+  const { animate, children } = props;
+  let { className } = props;
 
-    if (animate) {
-      className += ' vertical-timeline--animate';
-    }
+  className += ' vertical-timeline';
 
-    return (
-      <div className={className}>
-        {children}
-      </div>
-    );
+  if (animate) {
+    className += ' vertical-timeline--animate';
   }
+
+  return (
+    <div className={className}>
+      {children}
+    </div>
+  );
 }
 
 VerticalTimeline.propTypes = {
@@ -23,11 +23,13 @@ VerticalTimeline.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node
   ]).isRequired,
+  className: PropTypes.string,
   animate: PropTypes.bool
 };
 
 VerticalTimeline.defaultProps = {
-  animate: true
+  animate: true,
+  className: ''
 };
 
 export default VerticalTimeline;

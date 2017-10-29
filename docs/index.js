@@ -26,6 +26,7 @@ const pages = [
     content: () => (
       <VerticalTimeline>
         <VerticalTimelineElement
+          className="vertical-timeline-element--work"
           date="2011 - present"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<WorkIcon />}
@@ -37,6 +38,7 @@ const pages = [
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
+          className="vertical-timeline-element--work"
           date="2010 - 2011"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<WorkIcon />}
@@ -48,6 +50,7 @@ const pages = [
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
+          className="vertical-timeline-element--work"
           date="2008 - 2010"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<WorkIcon />}
@@ -59,6 +62,7 @@ const pages = [
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
+          className="vertical-timeline-element--work"
           date="2006 - 2008"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<WorkIcon />}
@@ -70,6 +74,7 @@ const pages = [
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
+          className="vertical-timeline-element--education"
           date="April 2013"
           iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
           icon={<SchoolIcon />}
@@ -81,6 +86,7 @@ const pages = [
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
+          className="vertical-timeline-element--education"
           date="November 2012"
           iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
           icon={<SchoolIcon />}
@@ -92,6 +98,7 @@ const pages = [
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
+          className="vertical-timeline-element--education"
           date="2002 - 2006"
           iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
           icon={<SchoolIcon />}
