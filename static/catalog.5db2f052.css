@@ -1522,12 +1522,12 @@ striping:
     z-index: 1000;
 }
 
-.vertical-timeline-element-title {
-    margin: 0;
+.vertical-timeline-element--work .vertical-timeline-element-content {
+    border-top: 3px solid #2196f3;
 }
 
-.vertical-timeline-element-subtitle {
-    margin: 0;
+.vertical-timeline-element--education .vertical-timeline-element-content {
+    border-top: 3px solid #e91e63;
 }.vertical-timeline {
   width: 95%;
   max-width: 1170px;
@@ -1694,8 +1694,16 @@ striping:
   display: inline-block;
 }
 .vertical-timeline-element-content p {
-  margin: 1em 0;
+  margin: 1em 0 0;
   line-height: 1.6;
+}
+
+.vertical-timeline-element-title {
+  margin: 0;
+}
+
+.vertical-timeline-element-subtitle {
+  margin: 0;
 }
 
 .vertical-timeline-element-content .vertical-timeline-element-date {
@@ -1858,4 +1866,4 @@ striping:
     transform: translateX(0);
   }
 }
-/*# sourceMappingURL=catalog.3815f8cf.css.map*/
+/*# sourceMappingURL=catalog.5db2f052.css.map*/
