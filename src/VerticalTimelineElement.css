@@ -149,7 +149,7 @@
   display: inline-block;
 }
 .vertical-timeline-element-content p {
-  margin: 1em 0;
+  margin: 1em 0 0;
   line-height: 1.6;
 }
 
