@@ -151,7 +151,32 @@ Position of the element (left or right).
 * [My resume (Stéphane Monnot)](https://stephanemonnot.com/).
 
 
+## For development
+### Launch the demo with catalog
+```code
+$ yarn start
+```
+
+### Run the tests
+```code
+$ yarn test
+```
+
+### Watch and Run the tests 
+```code
+$ yarn test:watch
+```
+
+### Run lint
+```code
+$ yarn test:lint
+```
+
+### Publish new version (only for maintainers)
+```code
+$ yarn publish
+```
+
 ## License
 
 *react-vertical-timeline-component* is available under MIT. See LICENSE for more details.
-
