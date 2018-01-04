@@ -1522,6 +1522,10 @@ striping:
     z-index: 1000;
 }
 
+.vertical-timeline-element-content {
+    color: black;
+}
+
 .vertical-timeline-element--work .vertical-timeline-element-content {
     border-top: 3px solid #2196f3;
 }
@@ -1866,4 +1870,4 @@ striping:
     transform: translateX(0);
   }
 }
-/*# sourceMappingURL=catalog.5db2f052.css.map*/
+/*# sourceMappingURL=catalog.2495ccf7.css.map*/
