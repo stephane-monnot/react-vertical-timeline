@@ -46,7 +46,7 @@
     "git-prepush-hook": "^1.0.2",
     "jest": "^21.2.1",
     "jest-css-modules": "^1.1.0",
-    "material-ui": "next",
+    "material-ui": "^1.0.0-beta.26",
     "material-ui-icons": "^1.0.0-beta.10",
     "purecss": "^1.0.0",
     "react": "^16.0.0",
