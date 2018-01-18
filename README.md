@@ -112,7 +112,7 @@ import 'react-vertical-timeline-component/style.min.css';
 ```
 
 
-## VerticalTimelineElement Props
+## VerticalTimeline Props
 
 ### `animate={ Boolean }`
 
