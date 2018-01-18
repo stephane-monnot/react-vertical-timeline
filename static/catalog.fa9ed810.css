@@ -1755,7 +1755,7 @@ striping:
   .vertical-timeline-element-content .vertical-timeline-element-date {
     position: absolute;
     width: 100%;
-    left: 122%;
+    left: 124%;
     top: 6px;
     font-size: 16px;
     font-size: 1rem;
@@ -1777,7 +1777,7 @@ striping:
   .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date,
   .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content .vertical-timeline-element-date {
     left: auto;
-    right: 122%;
+    right: 124%;
     text-align: right;
   }
   .vertical-timeline--animate .vertical-timeline-element-content.is-hidden {
@@ -1792,7 +1792,7 @@ striping:
 
 @media only screen and (min-width: 1170px) {
   /* inverse bounce effect on even content blocks */
-  .vertical-timeline--animate .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content.bounce-in
+  .vertical-timeline--animate .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content.bounce-in,
   .vertical-timeline--animate .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content.bounce-in {
     -webkit-animation: cd-bounce-2-inverse 0.6s;
     animation: cd-bounce-2-inverse 0.6s;
@@ -1870,4 +1870,4 @@ striping:
     transform: translateX(0);
   }
 }
-/*# sourceMappingURL=catalog.2495ccf7.css.map*/
+/*# sourceMappingURL=catalog.fa9ed810.css.map*/
