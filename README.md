@@ -1,7 +1,7 @@
 [![build status](https://secure.travis-ci.org/stephane-monnot/react-vertical-timeline.svg)](http://travis-ci.org/stephane-monnot/react-vertical-timeline) [![bitHound Score](https://www.bithound.io/github/stephane-monnot/react-vertical-timeline/badges/score.svg)](https://www.bithound.io/github/stephane-monnot/react-vertical-timeline) [![Dependency Status](https://david-dm.org/stephane-monnot/react-vertical-timeline.svg)](https://david-dm.org/stephane-monnot/react-vertical-timeline)
 
 # react-vertical-timeline-component - Vertical timeline for React.js
-![alt tag](https://i.imgur.com/th5Nz6D.gif)
+![alt tag](https://i.imgur.com/X7Tefzr.gifv)
 
 ## Full documentation & Demo
 
