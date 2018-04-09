@@ -119,14 +119,14 @@ import 'react-vertical-timeline-component/style.min.css';
 
 Enable or disable animations on elements (default: true).
 
-### `className={ Boolean }`
+### `className={ String }`
 
 Add extra class name to root div element.
 
 
 ## VerticalTimelineElement Props
 
-### `className={ Boolean }`
+### `className={ String }`
 
 Add extra class name to root div element.
 
