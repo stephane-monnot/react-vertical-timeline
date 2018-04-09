@@ -130,6 +130,10 @@ Add extra class name to root div element.
 
 Add extra class name to root div element.
 
+### `style={ Object }`
+
+Add extra style to root div element.
+
 ### `date={ String }`
 
 Date of the element.
