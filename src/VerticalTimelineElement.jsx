@@ -17,7 +17,7 @@ class VerticalTimelineElement extends Component {
   }
 
   render() {
-    const { id, children, icon, iconStyle, date, position } = this.props;
+    const { id, children, icon, iconStyle, date, position, style } = this.props;
     let { className } = this.props;
 
     className += ' vertical-timeline-element';
@@ -31,7 +31,7 @@ class VerticalTimelineElement extends Component {
     }
 
     return (
-      <div id={id} className={className}>
+      <div id={id} className={className} style={style}>
         <VisibilitySensor onChange={this.onVisibilitySensorChange}>
           <div>
             <span style={iconStyle} className={`vertical-timeline-element-icon ${this.state.visible ? 'bounce-in' : 'is-hidden'}`}>{icon}</span>
@@ -55,8 +55,9 @@ VerticalTimelineElement.propTypes = {
   className: PropTypes.string,
   icon: PropTypes.element,
   iconStyle: PropTypes.shape({}),
+  style: PropTypes.shape({}),
   date: PropTypes.string,
-  position: PropTypes.string
+  position: PropTypes.string,
 };
 
 VerticalTimelineElement.defaultProps = {
@@ -65,6 +66,7 @@ VerticalTimelineElement.defaultProps = {
   className: '',
   icon: null,
   iconStyle: null,
+  style: null,
   date: '',
   position: ''
 };
