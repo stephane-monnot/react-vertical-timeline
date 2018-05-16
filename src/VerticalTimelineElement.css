@@ -51,19 +51,23 @@
     height: 60px;
     left: 50%;
     margin-left: -30px;
-    /* Force Hardware Acceleration in WebKit */
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
   }
-  .vertical-timeline--animate .vertical-timeline-element-icon.is-hidden {
-    visibility: hidden;
-  }
-  .vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
-    visibility: visible;
-    -webkit-animation: cd-bounce-1 0.6s;
-    -moz-animation: cd-bounce-1 0.6s;
-    animation: cd-bounce-1 0.6s;
-  }
+}
+
+/* Icon animations */
+.vertical-timeline-element-icon {
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.vertical-timeline--animate .vertical-timeline-element-icon.is-hidden {
+  visibility: hidden;
+}
+.vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
+  visibility: visible;
+  -webkit-animation: cd-bounce-1 0.6s;
+  -moz-animation: cd-bounce-1 0.6s;
+  animation: cd-bounce-1 0.6s;
 }
 
 @-webkit-keyframes cd-bounce-1 {
@@ -231,15 +235,17 @@
     right: 124%;
     text-align: right;
   }
-  .vertical-timeline--animate .vertical-timeline-element-content.is-hidden {
-    visibility: hidden;
-  }
-  .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
-    visibility: visible;
-    -webkit-animation: cd-bounce-2 0.6s;
-    -moz-animation: cd-bounce-2 0.6s;
-    animation: cd-bounce-2 0.6s;
-  }
+}
+
+/* Box animations */
+.vertical-timeline--animate .vertical-timeline-element-content.is-hidden {
+  visibility: hidden;
+}
+.vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
+  visibility: visible;
+  -webkit-animation: cd-bounce-2-inverse 0.6s;
+  -moz-animation: cd-bounce-2-inverse 0.6s;
+  animation: cd-bounce-2-inverse 0.6s;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -251,6 +257,7 @@
     animation: cd-bounce-2-inverse 0.6s;
   }
 }
+
 @-webkit-keyframes cd-bounce-2 {
   0% {
     opacity: 0;
