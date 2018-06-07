@@ -30,7 +30,7 @@ class VerticalTimelineElement extends Component {
       className += ' vertical-timeline-element--right';
     }
 
-    const noChildren = React.Children.count(children) === 0
+    const noChildren = children === "";
 
     return (
       <div id={id} className={className} style={style}>
