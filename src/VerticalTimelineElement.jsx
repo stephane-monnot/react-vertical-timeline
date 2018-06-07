@@ -30,6 +30,10 @@ class VerticalTimelineElement extends Component {
       className += ' vertical-timeline-element--right';
     }
 
+    if(children === '') {
+      className += ' vertical-timeline-element--no-children';
+    }
+
     return (
       <div id={id} className={className} style={style}>
         <VisibilitySensor onChange={this.onVisibilitySensorChange}>
