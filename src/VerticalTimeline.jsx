@@ -24,7 +24,7 @@ VerticalTimeline.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node
-  ]).isRequired,
+  ]),
   className: PropTypes.string,
   animate: PropTypes.bool
 };
