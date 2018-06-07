@@ -146,6 +146,10 @@ Style of the element's icon.
 
 Icon of the element.
 
+### `iconOnClick={ Function }`
+
+onClick handler of the element's icon.
+
 ### `position={ String }`
 
 Position of the element (left or right).
