@@ -109,6 +109,10 @@ import 'react-vertical-timeline-component/style.min.css';
       Creative Direction, Visual Design
     </p>
   </VerticalTimelineElement>
+  <VerticalTimelineElement
+    iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+    icon={<StarIcon />}
+  />
 </VerticalTimeline>
 ```
 
