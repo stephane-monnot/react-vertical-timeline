@@ -111,7 +111,6 @@ const pages = [
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--start"
           iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
           icon={<StarIcon />}
         />
