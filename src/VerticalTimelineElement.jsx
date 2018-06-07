@@ -30,12 +30,14 @@ class VerticalTimelineElement extends Component {
       className += ' vertical-timeline-element--right';
     }
 
+    const noChildren = React.Children.count(children) === 0
+
     return (
       <div id={id} className={className} style={style}>
         <VisibilitySensor onChange={this.onVisibilitySensorChange}>
           <div>
             <span style={iconStyle} className={`vertical-timeline-element-icon ${this.state.visible ? 'bounce-in' : 'is-hidden'}`}>{icon}</span>
-            <div className={`vertical-timeline-element-content ${this.state.visible ? 'bounce-in' : 'is-hidden'}`}>
+            <div className={`vertical-timeline-element-content ${noChildren ? 'no-children' : ''} ${this.state.visible ? 'bounce-in' : 'is-hidden'}`}>
               {children}
               <span className="vertical-timeline-element-date">{date}</span>
             </div>
