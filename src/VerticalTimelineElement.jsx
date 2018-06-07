@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import VisibilitySensor from 'react-visibility-sensor';
 
 
@@ -17,28 +18,35 @@ class VerticalTimelineElement extends Component {
   }
 
   render() {
-    const { id, children, icon, iconStyle, iconOnClick, date, position, style } = this.props;
-    let { className } = this.props;
-
-    className += ' vertical-timeline-element';
-
-    if (position === 'left') {
-      className += ' vertical-timeline-element--left';
-    }
-
-    if (position === 'right') {
-      className += ' vertical-timeline-element--right';
-    }
-
-    if(children === '') {
-      className += ' vertical-timeline-element--no-children';
-    }
+    const {
+      id,
+      children,
+      icon,
+      iconStyle,
+      iconOnClick,
+      date,
+      position,
+      style,
+      className
+    } = this.props;
 
     return (
-      <div id={id} className={className} style={style}>
+      <div
+        id={id}
+        className={classNames(className, 'vertical-timeline-element', {
+          'vertical-timeline-element--left': position === 'left',
+          'vertical-timeline-element--right': position === 'right',
+          'vertical-timeline-element--no-children': children === ''
+        })}
+        style={style}
+      >
         <VisibilitySensor onChange={this.onVisibilitySensorChange}>
           <div>
-            <span style={iconStyle} onClick={iconOnClick} className={`vertical-timeline-element-icon ${this.state.visible ? 'bounce-in' : 'is-hidden'}`}>{icon}</span>
+            <span // eslint-disable-line jsx-a11y/no-static-element-interactions
+              style={iconStyle}
+              onClick={iconOnClick}
+              className={`vertical-timeline-element-icon ${this.state.visible ? 'bounce-in' : 'is-hidden'}`}
+            >{icon}</span>
             <div className={`vertical-timeline-element-content ${this.state.visible ? 'bounce-in' : 'is-hidden'}`}>
               {children}
               <span className="vertical-timeline-element-date">{date}</span>
@@ -55,14 +63,14 @@ VerticalTimelineElement.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node
-  ]).isRequired,
+  ]),
   className: PropTypes.string,
   icon: PropTypes.element,
   iconStyle: PropTypes.shape({}),
   iconOnClick: PropTypes.func,
   style: PropTypes.shape({}),
   date: PropTypes.string,
-  position: PropTypes.string,
+  position: PropTypes.string
 };
 
 VerticalTimelineElement.defaultProps = {
@@ -73,7 +81,8 @@ VerticalTimelineElement.defaultProps = {
   iconStyle: null,
   style: null,
   date: '',
-  position: ''
+  position: '',
+  iconOnClick: null
 };
 
 export default VerticalTimelineElement;

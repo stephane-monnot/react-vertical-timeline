@@ -37,6 +37,7 @@
     "cross-env": "^5.0.5",
     "del-cli": "^1.1.0",
     "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.8.0",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-plugin-import": "^2.7.0",
@@ -100,6 +101,8 @@
     "test"
   ],
   "dependencies": {
+    "classnames": "^2.2.5",
+    "prop-types": "^15.6.1",
     "react-visibility-sensor": "^3.11.0"
   }
 }
