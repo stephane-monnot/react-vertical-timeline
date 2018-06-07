@@ -135,7 +135,7 @@
   padding: 1em;
   box-shadow: 0 3px 0 #ddd;
 }
-.vertical-timeline-element-content.no-children {
+.vertical-timeline-element--no-children .vertical-timeline-element-content {
   background: transparent;
   box-shadow: none;
 }
@@ -184,7 +184,7 @@
   border: 7px solid transparent;
   border-right: 7px solid white;
 }
-.vertical-timeline-element-content.no-children::before {
+.vertical-timeline-element--no-children .vertical-timeline-element-content::before {
   display: none;
 }
 @media only screen and (min-width: 768px) {
