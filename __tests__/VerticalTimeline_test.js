@@ -4,25 +4,34 @@ import { expect } from 'chai';
 
 import VerticalTimeline from '../src/VerticalTimeline';
 
-describe('VerticalTimeline', function () {
-  it('should have the vertical-timeline classname', function () {
+describe('VerticalTimeline', () => {
+  it('should have the vertical-timeline classname', () => {
     const component = shallow(
-      <VerticalTimeline><div>test1</div><div>test2</div></VerticalTimeline>
+      <VerticalTimeline>
+        <div>test1</div>
+        <div>test2</div>
+      </VerticalTimeline>,
     );
-    expect(component.hasClass('vertical-timeline')).to.be.true;
+    expect(component.hasClass('vertical-timeline')).to.equal(true);
   });
 
-  it('should have the vertical-timeline--animate classname', function () {
+  it('should have the vertical-timeline--animate classname', () => {
     const component = shallow(
-      <VerticalTimeline><div>test1</div><div>test2</div></VerticalTimeline>
+      <VerticalTimeline>
+        <div>test1</div>
+        <div>test2</div>
+      </VerticalTimeline>,
     );
-    expect(component.hasClass('vertical-timeline--animate')).to.be.true;
+    expect(component.hasClass('vertical-timeline--animate')).to.equal(true);
   });
 
-  it('should not have the vertical-timeline--animate classname', function () {
+  it('should not have the vertical-timeline--animate classname', () => {
     const component = shallow(
-      <VerticalTimeline animate={false}><div>test1</div><div>test2</div></VerticalTimeline>
+      <VerticalTimeline animate={false}>
+        <div>test1</div>
+        <div>test2</div>
+      </VerticalTimeline>,
     );
-    expect(component.hasClass('vertical-timeline--animate')).to.be.false;
+    expect(component.hasClass('vertical-timeline--animate')).to.equal(false);
   });
 });

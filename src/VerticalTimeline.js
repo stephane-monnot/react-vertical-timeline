@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 const VerticalTimeline = ({ animate, children, className }) => (
-  <div className={classNames(className, 'vertical-timeline', {
-    'vertical-timeline--animate': animate
-  })}
+  <div
+    className={classNames(className, 'vertical-timeline', {
+      'vertical-timeline--animate': animate,
+    })}
   >
     {children}
   </div>
@@ -14,15 +15,15 @@ const VerticalTimeline = ({ animate, children, className }) => (
 VerticalTimeline.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
+    PropTypes.node,
   ]).isRequired,
   className: PropTypes.string,
-  animate: PropTypes.bool
+  animate: PropTypes.bool,
 };
 
 VerticalTimeline.defaultProps = {
   animate: true,
-  className: ''
+  className: '',
 };
 
 export default VerticalTimeline;
