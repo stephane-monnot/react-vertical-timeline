@@ -1,9 +1,9 @@
 {
-  "name": "react-vertical-timeline-component",
+  "name": "@joeyparis/react-vertical-timeline-component",
   "description": "Vertical timeline for React.js",
   "author": "Stéphane Monnot",
   "user": "stephane-monnot",
-  "version": "2.0.7",
+  "version": "2.0.10",
   "scripts": {
     "start": "catalog start docs",
     "test": "jest",
