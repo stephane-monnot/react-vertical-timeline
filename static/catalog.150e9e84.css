@@ -1567,7 +1567,8 @@ striping:
     left: 50%;
     margin-left: -2px;
   }
-}.vertical-timeline-element {
+}
+.vertical-timeline-element {
   position: relative;
   margin: 2em 0;
 }
@@ -1877,4 +1878,5 @@ striping:
     transform: translateX(0);
   }
 }
-/*# sourceMappingURL=catalog.33ce70a9.css.map*/
+
+/*# sourceMappingURL=catalog.150e9e84.css.map*/
