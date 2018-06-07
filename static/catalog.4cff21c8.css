@@ -1532,7 +1532,8 @@ striping:
 
 .vertical-timeline-element--education .vertical-timeline-element-content {
     border-top: 3px solid #e91e63;
-}.vertical-timeline {
+}
+.vertical-timeline {
   width: 95%;
   max-width: 1170px;
   margin: 2em auto;
@@ -1685,6 +1686,11 @@ striping:
   -webkit-box-shadow: 0 3px 0 #ddd;
           box-shadow: 0 3px 0 #ddd;
 }
+.vertical-timeline-element--no-children .vertical-timeline-element-content {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 .vertical-timeline-element-content:after {
   content: "";
   display: table;
@@ -1729,6 +1735,9 @@ striping:
   width: 0;
   border: 7px solid transparent;
   border-right: 7px solid white;
+}
+.vertical-timeline-element--no-children .vertical-timeline-element-content::before {
+  display: none;
 }
 @media only screen and (min-width: 768px) {
   .vertical-timeline-element-content h2 {
@@ -1879,4 +1888,4 @@ striping:
   }
 }
 
-/*# sourceMappingURL=catalog.150e9e84.css.map*/
+/*# sourceMappingURL=catalog.4cff21c8.css.map*/
