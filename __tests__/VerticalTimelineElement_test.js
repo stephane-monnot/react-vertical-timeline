@@ -23,6 +23,11 @@ describe('VerticalTimeline', function () {
       findRenderedDOMComponentWithClass(component, 'vertical-timeline-element--no-children');
     });
 
+    it('should have the vertical-timeline-element--no-children classname', function () {
+      const componentWithDate = renderIntoDocument(<VerticalTimelineElement date="2018" />);
+      findRenderedDOMComponentWithClass(componentWithDate, 'vertical-timeline-element--no-children');
+    });
+
     it('should not have the vertical-timeline-element--no-children classname', function () {
       const component = renderIntoDocument(
         <VerticalTimelineElement>
