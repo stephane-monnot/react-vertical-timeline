@@ -5,6 +5,7 @@ import GithubCorner from 'react-github-corner';
 import { Catalog, CodeSpecimen, ReactSpecimen, pageLoader } from 'catalog';
 import SchoolIcon from 'material-ui-icons/School';
 import WorkIcon from 'material-ui-icons/Work';
+import StarIcon from 'material-ui-icons/Star';
 import 'purecss/build/pure.css';
 
 import { VerticalTimeline, VerticalTimelineElement } from '../src/index';
@@ -109,6 +110,11 @@ const pages = [
             Creative Direction, Visual Design
           </p>
         </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--start"
+          iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+          icon={<StarIcon />}
+        />
       </VerticalTimeline>
     )
   }
