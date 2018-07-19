@@ -13,3 +13,27 @@
 .vertical-timeline-element--education .vertical-timeline-element-content {
     border-top: 3px solid #e91e63;
 }
+
+/* Example with custom animations */
+/*
+.vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
+  visibility: visible;
+  animation: custom-animation 0.6s !important;
+}
+
+@keyframes custom-animation {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+*/
