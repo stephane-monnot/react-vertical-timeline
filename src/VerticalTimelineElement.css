@@ -2,6 +2,9 @@
   position: relative;
   margin: 2em 0;
 }
+.vertical-timeline-element > div {
+  min-height: 1px;
+}
 .vertical-timeline-element:after {
   content: "";
   display: table;
