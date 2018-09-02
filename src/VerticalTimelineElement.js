@@ -29,6 +29,8 @@ class VerticalTimelineElement extends Component {
       className,
     } = this.props;
 
+    const { visible } = this.state;
+
     return (
       <div
         id={id}
@@ -45,14 +47,14 @@ class VerticalTimelineElement extends Component {
               style={iconStyle}
               onClick={iconOnClick}
               className={`vertical-timeline-element-icon ${
-                this.state.visible ? 'bounce-in' : 'is-hidden'
+                visible ? 'bounce-in' : 'is-hidden'
               }`}
             >
               {icon}
             </span>
             <div
               className={`vertical-timeline-element-content ${
-                this.state.visible ? 'bounce-in' : 'is-hidden'
+                visible ? 'bounce-in' : 'is-hidden'
               }`}
             >
               {children}
