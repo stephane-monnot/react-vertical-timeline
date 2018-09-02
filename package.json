@@ -3,7 +3,7 @@
   "description": "Vertical timeline for React.js",
   "author": "Stéphane Monnot",
   "user": "stephane-monnot",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "scripts": {
     "start": "catalog start docs",
     "test": "jest",
