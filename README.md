@@ -158,6 +158,11 @@ onClick handler of the element's icon.
 
 Position of the element (left or right).
 
+### `visibilitySensorProps={ Object }`
+
+Custom props pass to VisibilitySensor component (default: { partialVisibility: true, offset: { bottom: 80 } }).
+*See [react-visibility-sensor](https://github.com/joshwnj/react-visibility-sensor) for more information.*
+
 
 ## Showcase
 
