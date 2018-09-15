@@ -27,6 +27,7 @@ class VerticalTimelineElement extends Component {
       position,
       style,
       className,
+      visibilitySensorProps,
     } = this.props;
 
     const { visible } = this.state;
@@ -41,7 +42,10 @@ class VerticalTimelineElement extends Component {
         })}
         style={style}
       >
-        <VisibilitySensor onChange={this.onVisibilitySensorChange}>
+        <VisibilitySensor
+          {...visibilitySensorProps}
+          onChange={this.onVisibilitySensorChange}
+        >
           <div>
             <span // eslint-disable-line jsx-a11y/no-static-element-interactions
               style={iconStyle}
@@ -80,6 +84,7 @@ VerticalTimelineElement.propTypes = {
   style: PropTypes.shape({}),
   date: PropTypes.string,
   position: PropTypes.string,
+  visibilitySensorProps: PropTypes.shape({}),
 };
 
 VerticalTimelineElement.defaultProps = {
@@ -92,6 +97,7 @@ VerticalTimelineElement.defaultProps = {
   date: '',
   position: '',
   iconOnClick: null,
+  visibilitySensorProps: { partialVisibility: true, offset: { bottom: 80 } },
 };
 
 export default VerticalTimelineElement;
