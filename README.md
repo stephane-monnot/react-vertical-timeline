@@ -127,6 +127,10 @@ Enable or disable animations on elements (default: true).
 
 Add extra class name to root div element.
 
+### `layout={ String }`
+
+Choose if you want `'one-column'` or `'two-columns'` (default: `'two-columns'`).
+
 
 ## VerticalTimelineElement Props
 

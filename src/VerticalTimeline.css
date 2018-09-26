@@ -24,12 +24,12 @@
 }
 
 @media only screen and (min-width: 1170px) {
-  .vertical-timeline {
+  .vertical-timeline.vertical-timeline--two-columns {
     margin-top: 3em;
     margin-bottom: 3em;
     width: 90%;
   }
-  .vertical-timeline:before {
+  .vertical-timeline.vertical-timeline--two-columns:before {
     left: 50%;
     margin-left: -2px;
   }
