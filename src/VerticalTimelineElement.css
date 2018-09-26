@@ -49,7 +49,7 @@
 }
 
 @media only screen and (min-width: 1170px) {
-  .vertical-timeline-element-icon {
+  .vertical-timeline--two-columns .vertical-timeline-element-icon {
     width: 60px;
     height: 60px;
     left: 50%;
@@ -205,19 +205,19 @@
   }
 }
 @media only screen and (min-width: 1170px) {
-  .vertical-timeline-element-content {
+  .vertical-timeline--two-columns .vertical-timeline-element-content {
     margin-left: 0;
     padding: 1.5em;
     width: 40%;
   }
-  .vertical-timeline-element-content::before {
+  .vertical-timeline--two-columns .vertical-timeline-element-content::before {
     top: 24px;
     left: 100%;
     border-color: transparent;
     border-left-color: white;
   }
 
-  .vertical-timeline-element-content .vertical-timeline-element-date {
+  .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
     position: absolute;
     width: 100%;
     left: 124%;
@@ -226,12 +226,12 @@
     font-size: 1rem;
   }
 
-  .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content,
-  .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content {
+  .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content,
+  .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content {
     float: right;
   }
-  .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content::before,
-  .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content::before {
+  .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content::before,
+  .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content::before {
     top: 24px;
     left: auto;
     right: 100%;
@@ -239,8 +239,8 @@
     border-right-color: white;
   }
 
-  .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date,
-  .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content .vertical-timeline-element-date {
+  .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date,
+  .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content .vertical-timeline-element-date {
     left: auto;
     right: 124%;
     text-align: right;
@@ -260,8 +260,8 @@
 
 @media only screen and (min-width: 1170px) {
   /* inverse bounce effect on even content blocks */
-  .vertical-timeline--animate .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content.bounce-in,
-  .vertical-timeline--animate .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content.bounce-in {
+  .vertical-timeline--two-columns.vertical-timeline--animate .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content.bounce-in,
+  .vertical-timeline--two-columns.vertical-timeline--animate .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content.bounce-in {
     -webkit-animation: cd-bounce-2-inverse 0.6s;
     -moz-animation: cd-bounce-2-inverse 0.6s;
     animation: cd-bounce-2-inverse 0.6s;
