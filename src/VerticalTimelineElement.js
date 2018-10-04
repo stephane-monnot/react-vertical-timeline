@@ -82,7 +82,7 @@ VerticalTimelineElement.propTypes = {
   iconStyle: PropTypes.shape({}),
   iconOnClick: PropTypes.func,
   style: PropTypes.shape({}),
-  date: PropTypes.string,
+  date: PropTypes.node,
   position: PropTypes.string,
   visibilitySensorProps: PropTypes.shape({}),
 };
