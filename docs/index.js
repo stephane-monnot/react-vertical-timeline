@@ -127,7 +127,7 @@ const pages = [
     path: '/demo-single-column',
     title: 'Demo single column',
     content: () => (
-      <VerticalTimeline layout="1-column">{timelineElements}</VerticalTimeline>
+      <VerticalTimeline layout="1-column-left">{timelineElements}</VerticalTimeline>
     ),
   },
   {

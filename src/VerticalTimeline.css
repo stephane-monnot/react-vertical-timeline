@@ -27,6 +27,11 @@
   background: white;
 }
 
+.vertical-timeline.vertical-timeline--one-column-right::before {
+  right: 18px;
+  left: unset;
+}
+
 @media only screen and (min-width: 1170px) {
   .vertical-timeline.vertical-timeline--two-columns {
     width: 90%;
