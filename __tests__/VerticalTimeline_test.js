@@ -60,13 +60,23 @@ describe('VerticalTimeline', () => {
     expect(component.hasClass('vertical-timeline--two-columns')).to.equal(true);
   });
 
-  it('should have the vertical-timeline--one-column classname with layout=1-column', () => {
+  it('should have the vertical-timeline--one-column-left classname with layout=1-column-left', () => {
     const component = shallow(
-      <VerticalTimeline layout="1-column">
+      <VerticalTimeline layout="1-column-left">
         <div>test1</div>
         <div>test2</div>
       </VerticalTimeline>
     );
-    expect(component.hasClass('vertical-timeline--one-column')).to.equal(true);
+    expect(component.hasClass('vertical-timeline--one-column-left')).to.equal(true);
+  });
+
+  it('should have the vertical-timeline--one-column-right classname with layout=1-column-right', () => {
+    const component = shallow(
+      <VerticalTimeline layout="1-column-right">
+        <div>test1</div>
+        <div>test2</div>
+      </VerticalTimeline>,
+    );
+    expect(component.hasClass('vertical-timeline--one-column-right')).to.equal(true);
   });
 });
