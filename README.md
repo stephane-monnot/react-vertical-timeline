@@ -129,7 +129,7 @@ Add extra class name to root div element.
 
 ### `layout={ String }`
 
-Choose if you want `'one-column'` or `'two-columns'` (default: `'two-columns'`).
+Choose if you want `'1-column'` or `'2-columns'` (default: `'2-columns'`).
 
 
 ## VerticalTimelineElement Props
