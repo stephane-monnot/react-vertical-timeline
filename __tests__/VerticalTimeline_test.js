@@ -62,7 +62,9 @@ describe('VerticalTimeline', () => {
         <div>test2</div>
       </VerticalTimeline>,
     );
-    expect(component.hasClass('vertical-timeline--one-column-left')).to.equal(true);
+    expect(component.hasClass('vertical-timeline--one-column-left')).to.equal(
+      true,
+    );
   });
 
   it('should have the vertical-timeline--one-column-right classname with layout=1-column-right', () => {
@@ -72,6 +74,8 @@ describe('VerticalTimeline', () => {
         <div>test2</div>
       </VerticalTimeline>,
     );
-    expect(component.hasClass('vertical-timeline--one-column-right')).to.equal(true);
+    expect(component.hasClass('vertical-timeline--one-column-right')).to.equal(
+      true,
+    );
   });
 });
