@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import VisibilitySensor from 'react-visibility-sensor';
@@ -19,14 +19,17 @@ class VerticalTimelineElement extends Component {
   render() {
     const {
       id,
+      className,
       children,
+      date,
+      dateClassName,
+      textClassName,
       icon,
+      iconClassName,
       iconStyle,
       iconOnClick,
-      date,
       position,
       style,
-      className,
       visibilitySensorProps,
     } = this.props;
 
@@ -46,11 +49,11 @@ class VerticalTimelineElement extends Component {
           {...visibilitySensorProps}
           onChange={this.onVisibilitySensorChange}
         >
-          <div>
+          <Fragment>
             <span // eslint-disable-line jsx-a11y/no-static-element-interactions
               style={iconStyle}
               onClick={iconOnClick}
-              className={`vertical-timeline-element-icon ${
+              className={`vertical-timeline-element-icon ${iconClassName} ${
                 visible ? 'bounce-in' : 'is-hidden'
               }`}
             >
@@ -59,12 +62,16 @@ class VerticalTimelineElement extends Component {
             <div
               className={`vertical-timeline-element-content ${
                 visible ? 'bounce-in' : 'is-hidden'
-              }`}
+              }  ${textClassName}`}
             >
               {children}
-              <span className="vertical-timeline-element-date">{date}</span>
+              <span
+                className={`vertical-timeline-element-date ${dateClassName}`}
+              >
+                {date}
+              </span>
             </div>
-          </div>
+          </Fragment>
         </VisibilitySensor>
       </div>
     );
@@ -78,7 +85,10 @@ VerticalTimelineElement.propTypes = {
     PropTypes.node,
   ]),
   className: PropTypes.string,
+  textClassName: PropTypes.string,
+  dateClassName: PropTypes.string,
   icon: PropTypes.element,
+  iconClassName: PropTypes.string,
   iconStyle: PropTypes.shape({}),
   iconOnClick: PropTypes.func,
   style: PropTypes.shape({}),
@@ -91,10 +101,13 @@ VerticalTimelineElement.defaultProps = {
   id: '',
   children: '',
   className: '',
+  textClassName: 'contentClass',
   icon: null,
+  iconClassName: 'iconClass',
   iconStyle: null,
   style: null,
   date: '',
+  dateClassName: 'dateClass',
   position: '',
   iconOnClick: null,
   visibilitySensorProps: { partialVisibility: true, offset: { bottom: 80 } },

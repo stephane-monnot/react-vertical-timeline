@@ -17,6 +17,7 @@ import '../style.css';
 const documentationImports = {};
 const timelineElements = [
   <VerticalTimelineElement
+    key="Creative Director"
     className="vertical-timeline-element--work"
     date="2011 - present"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
@@ -30,6 +31,7 @@ const timelineElements = [
     </p>
   </VerticalTimelineElement>,
   <VerticalTimelineElement
+    key="Art Director"
     className="vertical-timeline-element--work"
     date="2010 - 2011"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
@@ -42,6 +44,7 @@ const timelineElements = [
     </p>
   </VerticalTimelineElement>,
   <VerticalTimelineElement
+    key="Web Designer 2010"
     className="vertical-timeline-element--work"
     date="2008 - 2010"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
@@ -52,6 +55,7 @@ const timelineElements = [
     <p>User Experience, Visual Design</p>
   </VerticalTimelineElement>,
   <VerticalTimelineElement
+    key="Web Designer 2008"
     className="vertical-timeline-element--work"
     date="2006 - 2008"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
@@ -62,6 +66,7 @@ const timelineElements = [
     <p>User Experience, Visual Design</p>
   </VerticalTimelineElement>,
   <VerticalTimelineElement
+    key="Online Course"
     className="vertical-timeline-element--education"
     date="April 2013"
     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
@@ -74,6 +79,7 @@ const timelineElements = [
     <p>Strategy, Social Media</p>
   </VerticalTimelineElement>,
   <VerticalTimelineElement
+    key="Agile Development Scrum Master"
     className="vertical-timeline-element--education"
     date="November 2012"
     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
@@ -86,6 +92,7 @@ const timelineElements = [
     <p>Creative Direction, User Experience, Visual Design</p>
   </VerticalTimelineElement>,
   <VerticalTimelineElement
+    key="Bachelor of Science in Interactive Digital Media Visual Imaging"
     className="vertical-timeline-element--education"
     date="2002 - 2006"
     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
@@ -98,6 +105,7 @@ const timelineElements = [
     <p>Creative Direction, Visual Design</p>
   </VerticalTimelineElement>,
   <VerticalTimelineElement
+    key="icon"
     iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
     icon={<StarIcon />}
   />,

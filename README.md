@@ -142,9 +142,17 @@ Add extra class name to root div element.
 
 Add extra style to root div element.
 
+### `textClassName={ String }`
+
+Add extra class name to the text container.
+
 ### `date={ String }`
 
 Date of the element.
+
+### `dateClassName={ String }`
+
+Add extra class name to the element's date.
 
 ### `iconStyle={ Object }`
 
@@ -153,6 +161,10 @@ Style of the element's icon.
 ### `icon={ String }`
 
 Icon of the element.
+
+### `iconClassName={ String }`
+
+Add extra class name to the element's icon.
 
 ### `iconOnClick={ Function }`
 
