@@ -5,7 +5,7 @@
 .vertical-timeline {
   width: 95%;
   max-width: 1170px;
-  margin: 2em auto;
+  margin: 0 auto;
   position: relative;
   padding: 2em 0;
 }
@@ -29,8 +29,6 @@
 
 @media only screen and (min-width: 1170px) {
   .vertical-timeline.vertical-timeline--two-columns {
-    margin-top: 3em;
-    margin-bottom: 3em;
     width: 90%;
   }
   .vertical-timeline.vertical-timeline--two-columns:before {
