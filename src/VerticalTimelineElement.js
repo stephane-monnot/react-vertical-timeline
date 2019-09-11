@@ -101,7 +101,7 @@ VerticalTimelineElement.defaultProps = {
   date: '',
   position: '',
   iconOnClick: null,
-  visibilitySensorProps: { partialVisibility: true, offset: { bottom: 80 } },
+  visibilitySensorProps: { partialVisibility: true, offset: { bottom: 40 } },
 };
 
 export default VerticalTimelineElement;
