@@ -20,6 +20,7 @@ class VerticalTimelineElement extends Component {
     const {
       id,
       children,
+      contentStyle,
       icon,
       iconStyle,
       iconOnClick,
@@ -57,6 +58,7 @@ class VerticalTimelineElement extends Component {
               {icon}
             </span>
             <div
+              style={contentStyle}
               className={`vertical-timeline-element-content ${
                 visible ? 'bounce-in' : 'is-hidden'
               }`}
@@ -78,6 +80,7 @@ VerticalTimelineElement.propTypes = {
     PropTypes.node,
   ]),
   className: PropTypes.string,
+  contentStyle: PropTypes.shape({}),
   icon: PropTypes.element,
   iconStyle: PropTypes.shape({}),
   iconOnClick: PropTypes.func,
@@ -91,6 +94,7 @@ VerticalTimelineElement.defaultProps = {
   id: '',
   children: '',
   className: '',
+  contentStyle: null,
   icon: null,
   iconStyle: null,
   style: null,
