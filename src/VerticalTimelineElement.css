@@ -154,7 +154,6 @@
   font-size: 13px;
   font-size: 0.8125rem;
   font-weight: 500;
-  color: #333;
 }
 .vertical-timeline-element-content .vertical-timeline-element-date {
   display: inline-block;
@@ -177,7 +176,7 @@
   padding: .8em 0;
   opacity: .7;
 }
-.vertical-timeline-element-content::before {
+.vertical-timeline-element-content-arrow {
   content: '';
   position: absolute;
   top: 16px;
@@ -186,8 +185,9 @@
   width: 0;
   border: 7px solid transparent;
   border-right: 7px solid white;
+
 }
-.vertical-timeline-element--no-children .vertical-timeline-element-content::before {
+.vertical-timeline-element--no-children .vertical-timeline-element-content-arrow {
   display: none;
 }
 @media only screen and (min-width: 768px) {
@@ -210,11 +210,10 @@
     padding: 1.5em;
     width: 44%;
   }
-  .vertical-timeline--two-columns .vertical-timeline-element-content::before {
+  .vertical-timeline--two-columns .vertical-timeline-element-content-arrow {
     top: 24px;
     left: 100%;
-    border-color: transparent;
-    border-left-color: white;
+    transform: rotate(180deg);
   }
 
   .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
@@ -230,13 +229,12 @@
   .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content {
     float: right;
   }
-  .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content::before,
-  .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content::before {
+  .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content-arrow,
+  .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content-arrow {
     top: 24px;
     left: auto;
     right: 100%;
-    border-color: transparent;
-    border-right-color: white;
+    transform: rotate(0deg);
   }
 
   .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date,

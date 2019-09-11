@@ -27,6 +27,8 @@ import 'react-vertical-timeline-component/style.min.css';
 <VerticalTimeline>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
+    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
     date="2011 - present"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={<WorkIcon />}
@@ -141,6 +143,14 @@ Add extra class name to root div element.
 ### `style={ Object }`
 
 Add extra style to root div element.
+
+### `contentStyle={ Object }`
+
+Add extra style to content div element.
+
+### `contentArrowStyle={ Object }`
+
+Add extra style to content arrow div element.
 
 ### `date={ String }`
 

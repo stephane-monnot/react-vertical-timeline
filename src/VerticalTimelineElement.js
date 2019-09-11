@@ -20,6 +20,7 @@ class VerticalTimelineElement extends Component {
     const {
       id,
       children,
+      contentArrowStyle,
       contentStyle,
       icon,
       iconStyle,
@@ -63,6 +64,10 @@ class VerticalTimelineElement extends Component {
                 visible ? 'bounce-in' : 'is-hidden'
               }`}
             >
+              <div
+                style={contentArrowStyle}
+                className="vertical-timeline-element-content-arrow"
+              />
               {children}
               <span className="vertical-timeline-element-date">{date}</span>
             </div>
@@ -80,6 +85,7 @@ VerticalTimelineElement.propTypes = {
     PropTypes.node,
   ]),
   className: PropTypes.string,
+  contentArrowStyle: PropTypes.shape({}),
   contentStyle: PropTypes.shape({}),
   icon: PropTypes.element,
   iconStyle: PropTypes.shape({}),
@@ -94,6 +100,7 @@ VerticalTimelineElement.defaultProps = {
   id: '',
   children: '',
   className: '',
+  contentArrowStyle: null,
   contentStyle: null,
   icon: null,
   iconStyle: null,
