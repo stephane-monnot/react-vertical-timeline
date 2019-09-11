@@ -14,11 +14,11 @@ describe('VerticalTimeline', () => {
 
   it('should have the vertical-timeline-element--right classname', () => {
     const component = renderIntoDocument(
-      <VerticalTimelineElement position="right" />,
+      <VerticalTimelineElement position="right" />
     );
     findRenderedDOMComponentWithClass(
       component,
-      'vertical-timeline-element--right',
+      'vertical-timeline-element--right'
     );
   });
 
@@ -27,17 +27,17 @@ describe('VerticalTimeline', () => {
       const component = renderIntoDocument(<VerticalTimelineElement />);
       findRenderedDOMComponentWithClass(
         component,
-        'vertical-timeline-element--no-children',
+        'vertical-timeline-element--no-children'
       );
     });
 
     it('should have the vertical-timeline-element--no-children classname', () => {
       const componentWithDate = renderIntoDocument(
-        <VerticalTimelineElement date="2018" />,
+        <VerticalTimelineElement date="2018" />
       );
       findRenderedDOMComponentWithClass(
         componentWithDate,
-        'vertical-timeline-element--no-children',
+        'vertical-timeline-element--no-children'
       );
     });
 
@@ -45,13 +45,13 @@ describe('VerticalTimeline', () => {
       const component = renderIntoDocument(
         <VerticalTimelineElement>
           <div>My Child</div>
-        </VerticalTimelineElement>,
+        </VerticalTimelineElement>
       );
       expect(
         scryRenderedDOMComponentsWithClass(
           component,
-          'vertical-timeline-element--no-children',
-        ).length,
+          'vertical-timeline-element--no-children'
+        ).length
       ).toBe(0);
     });
   });

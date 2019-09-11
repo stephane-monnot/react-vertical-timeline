@@ -3,9 +3,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import GithubCorner from 'react-github-corner';
 import { Catalog, CodeSpecimen, ReactSpecimen, pageLoader } from 'catalog';
-import SchoolIcon from 'material-ui-icons/School';
-import WorkIcon from 'material-ui-icons/Work';
-import StarIcon from 'material-ui-icons/Star';
+import SchoolIcon from '@material-ui/icons/School';
+import WorkIcon from '@material-ui/icons/Work';
+import StarIcon from '@material-ui/icons/Star';
 import 'purecss/build/pure.css';
 
 import { VerticalTimeline, VerticalTimelineElement } from '../src/index';
@@ -150,5 +150,5 @@ ReactDOM.render(
       title="React Vertical Timeline"
     />
   </div>,
-  document.getElementById('catalog'),
+  document.getElementById('catalog')
 );

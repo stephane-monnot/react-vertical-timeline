@@ -10,7 +10,7 @@ describe('VerticalTimeline', () => {
       <VerticalTimeline>
         <div>test1</div>
         <div>test2</div>
-      </VerticalTimeline>,
+      </VerticalTimeline>
     );
     expect(component.hasClass('vertical-timeline')).to.equal(true);
   });
@@ -20,7 +20,7 @@ describe('VerticalTimeline', () => {
       <VerticalTimeline>
         <div>test1</div>
         <div>test2</div>
-      </VerticalTimeline>,
+      </VerticalTimeline>
     );
     expect(component.hasClass('vertical-timeline--animate')).to.equal(true);
   });
@@ -30,7 +30,7 @@ describe('VerticalTimeline', () => {
       <VerticalTimeline animate={false}>
         <div>test1</div>
         <div>test2</div>
-      </VerticalTimeline>,
+      </VerticalTimeline>
     );
     expect(component.hasClass('vertical-timeline--animate')).to.equal(false);
   });
@@ -40,7 +40,7 @@ describe('VerticalTimeline', () => {
       <VerticalTimeline>
         <div>test1</div>
         <div>test2</div>
-      </VerticalTimeline>,
+      </VerticalTimeline>
     );
     expect(component.hasClass('vertical-timeline--two-columns')).to.equal(true);
   });
@@ -50,7 +50,7 @@ describe('VerticalTimeline', () => {
       <VerticalTimeline layout="2-columns">
         <div>test1</div>
         <div>test2</div>
-      </VerticalTimeline>,
+      </VerticalTimeline>
     );
     expect(component.hasClass('vertical-timeline--two-columns')).to.equal(true);
   });
@@ -60,7 +60,7 @@ describe('VerticalTimeline', () => {
       <VerticalTimeline layout="1-column">
         <div>test1</div>
         <div>test2</div>
-      </VerticalTimeline>,
+      </VerticalTimeline>
     );
     expect(component.hasClass('vertical-timeline--one-column')).to.equal(true);
   });
