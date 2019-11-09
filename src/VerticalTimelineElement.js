@@ -1,82 +1,71 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import VisibilitySensor from 'react-visibility-sensor';
 
-class VerticalTimelineElement extends Component {
-  constructor(props) {
-    super(props);
-    this.onVisibilitySensorChange = this.onVisibilitySensorChange.bind(this);
-    this.state = { visible: false };
-  }
-
-  onVisibilitySensorChange(isVisible) {
+const VerticalTimelineElement = ({
+  id,
+  children,
+  className,
+  contentArrowStyle,
+  contentStyle,
+  icon,
+  iconStyle,
+  style,
+  date,
+  position,
+  iconOnClick,
+  visibilitySensorProps,
+}) => {
+  const [visible, setVisible] = useState(false);
+  const onVisibilitySensorChange = isVisible => {
     if (isVisible) {
-      this.setState({ visible: true });
+      setVisible(true);
     }
-  }
+  };
 
-  render() {
-    const {
-      id,
-      children,
-      contentArrowStyle,
-      contentStyle,
-      icon,
-      iconStyle,
-      iconOnClick,
-      date,
-      position,
-      style,
-      className,
-      visibilitySensorProps,
-    } = this.props;
-
-    const { visible } = this.state;
-
-    return (
-      <div
-        id={id}
-        className={classNames(className, 'vertical-timeline-element', {
-          'vertical-timeline-element--left': position === 'left',
-          'vertical-timeline-element--right': position === 'right',
-          'vertical-timeline-element--no-children': children === '',
-        })}
-        style={style}
+  return (
+    <div
+      id={id}
+      className={classNames(className, 'vertical-timeline-element', {
+        'vertical-timeline-element--left': position === 'left',
+        'vertical-timeline-element--right': position === 'right',
+        'vertical-timeline-element--no-children': children === '',
+      })}
+      style={style}
+    >
+      <VisibilitySensor
+        {...visibilitySensorProps}
+        onChange={onVisibilitySensorChange}
       >
-        <VisibilitySensor
-          {...visibilitySensorProps}
-          onChange={this.onVisibilitySensorChange}
-        >
-          <div>
-            <span // eslint-disable-line jsx-a11y/no-static-element-interactions
-              style={iconStyle}
-              onClick={iconOnClick}
-              className={`vertical-timeline-element-icon ${
-                visible ? 'bounce-in' : 'is-hidden'
-              }`}
-            >
-              {icon}
-            </span>
+        <div>
+          <span // eslint-disable-line jsx-a11y/no-static-element-interactions
+            style={iconStyle}
+            onClick={iconOnClick}
+            className={`vertical-timeline-element-icon ${
+              visible ? 'bounce-in' : 'is-hidden'
+            }`}
+          >
+            {icon}
+          </span>
+          <div
+            style={contentStyle}
+            className={`vertical-timeline-element-content ${
+              visible ? 'bounce-in' : 'is-hidden'
+            }`}
+          >
             <div
-              style={contentStyle}
-              className={`vertical-timeline-element-content ${
-                visible ? 'bounce-in' : 'is-hidden'
-              }`}
-            >
-              <div
-                style={contentArrowStyle}
-                className="vertical-timeline-element-content-arrow"
-              />
-              {children}
-              <span className="vertical-timeline-element-date">{date}</span>
-            </div>
+              style={contentArrowStyle}
+              className="vertical-timeline-element-content-arrow"
+            />
+            {children}
+            <span className="vertical-timeline-element-date">{date}</span>
           </div>
-        </VisibilitySensor>
-      </div>
-    );
-  }
-}
+        </div>
+      </VisibilitySensor>
+    </div>
+  );
+};
 
 VerticalTimelineElement.propTypes = {
   id: PropTypes.string,
