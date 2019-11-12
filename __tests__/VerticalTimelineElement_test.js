@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   renderIntoDocument,
-  findRenderedDOMComponentWithClass,
   scryRenderedDOMComponentsWithClass,
 } from 'react-dom/test-utils';
 import VerticalTimelineElement from '../src/VerticalTimelineElement';
@@ -9,14 +8,14 @@ import VerticalTimelineElement from '../src/VerticalTimelineElement';
 describe('VerticalTimeline', () => {
   it('should have the vertical-timeline-element classname', () => {
     const component = renderIntoDocument(<VerticalTimelineElement />);
-    findRenderedDOMComponentWithClass(component, 'vertical-timeline-element');
+    scryRenderedDOMComponentsWithClass(component, 'vertical-timeline-element');
   });
 
   it('should have the vertical-timeline-element--right classname', () => {
     const component = renderIntoDocument(
       <VerticalTimelineElement position="right" />
     );
-    findRenderedDOMComponentWithClass(
+    scryRenderedDOMComponentsWithClass(
       component,
       'vertical-timeline-element--right'
     );
@@ -25,7 +24,7 @@ describe('VerticalTimeline', () => {
   describe('when children is empty', () => {
     it('should have the vertical-timeline-element--no-children classname', () => {
       const component = renderIntoDocument(<VerticalTimelineElement />);
-      findRenderedDOMComponentWithClass(
+      scryRenderedDOMComponentsWithClass(
         component,
         'vertical-timeline-element--no-children'
       );
@@ -35,7 +34,7 @@ describe('VerticalTimeline', () => {
       const componentWithDate = renderIntoDocument(
         <VerticalTimelineElement date="2018" />
       );
-      findRenderedDOMComponentWithClass(
+      scryRenderedDOMComponentsWithClass(
         componentWithDate,
         'vertical-timeline-element--no-children'
       );

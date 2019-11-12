@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-const VerticalTimeline = ({ animate, children, className, layout }) => (
+const VerticalTimeline = ({ animate, className, layout, children }) => (
   <div
     className={classNames(className, 'vertical-timeline', {
       'vertical-timeline--animate': animate,
