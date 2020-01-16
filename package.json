@@ -24,12 +24,12 @@
   "module": "dist-es6",
   "jsnext:main": "dist-es6",
   "devDependencies": {
-    "@babel/cli": "^7.7.7",
+    "@babel/cli": "^7.8.3",
     "@babel/core": "^7.6.0",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.6.0",
     "@babel/preset-es2015": "^7.0.0-beta.53",
-    "@babel/preset-react": "^7.7.4",
+    "@babel/preset-react": "^7.8.3",
     "@material-ui/core": "^4.4.1",
     "@material-ui/icons": "^4.4.1",
     "babel-eslint": "^10.0.3",
@@ -61,8 +61,7 @@
     "react-github-corner": "^2.3.0",
     "replace": "^1.1.1",
     "rimraf": "^3.0.0",
-    "sync-exec": "^0.6.2",
-    "webpack": "^4.39.3"
+    "sync-exec": "^0.6.2"
   },
   "repository": {
     "type": "git",
