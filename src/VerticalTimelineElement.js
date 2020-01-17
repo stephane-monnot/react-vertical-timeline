@@ -19,6 +19,12 @@ const VerticalTimelineElement = ({
 }) => {
   const [visible, setVisible] = useState(false);
   const onVisibilitySensorChange = isVisible => {
+    const { onChange } = visibilitySensorProps;
+
+    if (typeof onChange === 'function') {
+      onChange(isVisible);
+    }
+
     if (isVisible) {
       setVisible(true);
     }
@@ -82,7 +88,11 @@ VerticalTimelineElement.propTypes = {
   style: PropTypes.shape({}),
   date: PropTypes.node,
   position: PropTypes.string,
-  visibilitySensorProps: PropTypes.shape({}),
+  visibilitySensorProps: PropTypes.shape({
+    onChange: PropTypes.func,
+    partialVisibility: PropTypes.bool,
+    offset: PropTypes.shape({}),
+  }),
 };
 
 VerticalTimelineElement.defaultProps = {
