@@ -140,37 +140,49 @@ Choose if you want `'1-column'` or `'2-columns'` (default: `'2-columns'`).
 
 Add extra class name to root div element.
 
-### `style={ Object }`
+### `contentArrowStyle={ Object }`
 
-Add extra style to root div element.
+Add extra style to content arrow div element.
 
 ### `contentStyle={ Object }`
 
 Add extra style to content div element.
 
-### `contentArrowStyle={ Object }`
-
-Add extra style to content arrow div element.
-
 ### `date={ String }`
 
 Date of the element.
 
-### `iconStyle={ Object }`
+### `dateClassName={ String }`
 
-Style of the element's icon.
+Add extra class name to the element's date.
 
 ### `icon={ String }`
 
 Icon of the element.
 
+### `iconClassName={ String }`
+
+Add extra class name to the element's icon.
+
 ### `iconOnClick={ Function }`
 
 onClick handler of the element's icon.
 
+### `iconStyle={ Object }`
+
+Style of the element's icon.
+
 ### `position={ String }`
 
 Position of the element (left or right).
+
+### `style={ Object }`
+
+Add extra style to root div element.
+
+### `textClassName={ String }`
+
+Add extra class name to the text container.
 
 ### `visibilitySensorProps={ Object }`
 

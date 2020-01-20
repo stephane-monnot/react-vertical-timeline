@@ -4,17 +4,20 @@ import classNames from 'classnames';
 import VisibilitySensor from 'react-visibility-sensor';
 
 const VerticalTimelineElement = ({
-  id,
   children,
   className,
   contentArrowStyle,
   contentStyle,
-  icon,
-  iconStyle,
-  style,
   date,
-  position,
+  dateClassName,
+  icon,
+  iconClassName,
   iconOnClick,
+  iconStyle,
+  id,
+  position,
+  style,
+  textClassName,
   visibilitySensorProps,
 }) => {
   const [visible, setVisible] = useState(false);
@@ -44,37 +47,53 @@ const VerticalTimelineElement = ({
         {...visibilitySensorProps}
         onChange={onVisibilitySensorChange}
       >
-        <div>
+        <React.Fragment>
           <span // eslint-disable-line jsx-a11y/no-static-element-interactions
             style={iconStyle}
             onClick={iconOnClick}
-            className={`vertical-timeline-element-icon ${
-              visible ? 'bounce-in' : 'is-hidden'
-            }`}
+            className={classNames(
+              iconClassName,
+              'vertical-timeline-element-icon',
+              {
+                'bounce-in': visible,
+                'is-hidden': !visible,
+              }
+            )}
           >
             {icon}
           </span>
           <div
             style={contentStyle}
-            className={`vertical-timeline-element-content ${
-              visible ? 'bounce-in' : 'is-hidden'
-            }`}
+            className={classNames(
+              textClassName,
+              'vertical-timeline-element-content',
+              {
+                'bounce-in': visible,
+                'is-hidden': !visible,
+              }
+            )}
           >
             <div
               style={contentArrowStyle}
               className="vertical-timeline-element-content-arrow"
             />
             {children}
-            <span className="vertical-timeline-element-date">{date}</span>
+            <span
+              className={classNames(
+                dateClassName,
+                'vertical-timeline-element-date'
+              )}
+            >
+              {date}
+            </span>
           </div>
-        </div>
+        </React.Fragment>
       </VisibilitySensor>
     </div>
   );
 };
 
 VerticalTimelineElement.propTypes = {
-  id: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
@@ -82,12 +101,16 @@ VerticalTimelineElement.propTypes = {
   className: PropTypes.string,
   contentArrowStyle: PropTypes.shape({}),
   contentStyle: PropTypes.shape({}),
+  date: PropTypes.node,
+  dateClassName: PropTypes.string,
   icon: PropTypes.element,
+  iconClassName: PropTypes.string,
   iconStyle: PropTypes.shape({}),
   iconOnClick: PropTypes.func,
-  style: PropTypes.shape({}),
-  date: PropTypes.node,
+  id: PropTypes.string,
   position: PropTypes.string,
+  style: PropTypes.shape({}),
+  textClassName: PropTypes.string,
   visibilitySensorProps: PropTypes.shape({
     onChange: PropTypes.func,
     partialVisibility: PropTypes.bool,
@@ -96,17 +119,19 @@ VerticalTimelineElement.propTypes = {
 };
 
 VerticalTimelineElement.defaultProps = {
-  id: '',
   children: '',
   className: '',
   contentArrowStyle: null,
   contentStyle: null,
   icon: null,
+  iconClassName: '',
+  iconOnClick: null,
   iconStyle: null,
+  id: '',
   style: null,
   date: '',
   position: '',
-  iconOnClick: null,
+  textClassName: '',
   visibilitySensorProps: { partialVisibility: true, offset: { bottom: 40 } },
 };
 
