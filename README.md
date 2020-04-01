@@ -168,6 +168,10 @@ Add extra class name to the element's icon.
 
 onClick handler of the element's icon.
 
+### `onTimelineElementClick={ Function }`
+
+onClick handler of the vertical timeline element's div.
+
 ### `iconStyle={ Object }`
 
 Style of the element's icon.
