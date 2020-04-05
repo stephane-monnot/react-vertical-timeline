@@ -13,6 +13,7 @@ const VerticalTimelineElement = ({
   icon,
   iconClassName,
   iconOnClick,
+  onTimelineElementClick,
   iconStyle,
   id,
   position,
@@ -64,6 +65,7 @@ const VerticalTimelineElement = ({
           </span>
           <div
             style={contentStyle}
+            onClick={onTimelineElementClick}
             className={classNames(
               textClassName,
               'vertical-timeline-element-content',
@@ -107,6 +109,7 @@ VerticalTimelineElement.propTypes = {
   iconClassName: PropTypes.string,
   iconStyle: PropTypes.shape({}),
   iconOnClick: PropTypes.func,
+  onTimelineElementClick: PropTypes.func,
   id: PropTypes.string,
   position: PropTypes.string,
   style: PropTypes.shape({}),
@@ -126,6 +129,7 @@ VerticalTimelineElement.defaultProps = {
   icon: null,
   iconClassName: '',
   iconOnClick: null,
+  onTimelineElementClick: null,
   iconStyle: null,
   id: '',
   style: null,
