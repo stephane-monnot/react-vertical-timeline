@@ -17,6 +17,9 @@ import '../style.css';
 const documentationImports = {};
 const timelineElements = [
   <VerticalTimelineElement
+    onTimelineElementClick={() => {
+      alert('onTimelineElementClick event fired');
+    }}
     className="vertical-timeline-element--work"
     contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
