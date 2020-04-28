@@ -48,6 +48,12 @@ const VerticalLoadMore = () => {
     setElements([...elements, ...dataExamples]);
   };
 
+  const addButton = () => (
+    <Fab classes={{ root: 'fab-button' }} color="primary" aria-label="add">
+      <AddIcon />
+    </Fab>
+  );
+
   const getTimelineElements = () =>
     elements.map(element => (
       <VerticalTimelineElement {...element.props}>
@@ -66,15 +72,7 @@ const VerticalLoadMore = () => {
         <VerticalTimelineElement
           iconOnClick={loadMore}
           iconClassName="vertical-timeline-element-icon--button"
-          icon={
-            <Fab
-              classes={{ root: 'fab-button' }}
-              color="primary"
-              aria-label="add"
-            >
-              <AddIcon />
-            </Fab>
-          }
+          icon={addButton()}
         />
       </VerticalTimeline>
     </div>
