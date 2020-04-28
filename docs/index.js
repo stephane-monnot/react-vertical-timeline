@@ -134,6 +134,15 @@ const pages = [
     title: 'Demo load more',
     content: () => <VerticalLoadMore />,
   },
+  {
+    path: '/demo-custom-line',
+    title: 'Demo custom line color',
+    content: () => (
+      <VerticalTimeline className="vertical-timeline-custom-line">
+        {timelineElements}
+      </VerticalTimeline>
+    ),
+  },
 ];
 
 // Catalog - logoSrc="../images/logo.png"

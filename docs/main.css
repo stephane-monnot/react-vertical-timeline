@@ -18,6 +18,21 @@
   color: #333;
 }
 
+/* CUSTOM LINE COLOR */
+/* The line */
+.vertical-timeline.vertical-timeline-custom-line::before {
+  background: #424242;
+}
+
+/* Icon container's border */
+.vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--work .vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px #1976d2, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--education .vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px #c2185b, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
 /* Example with custom animations */
 /*
 .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
