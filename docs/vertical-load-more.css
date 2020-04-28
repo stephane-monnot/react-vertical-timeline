@@ -1,0 +1,27 @@
+.vertical-timeline-element-icon.vertical-timeline-element-icon--button {
+  box-shadow: none;
+}
+
+.vertical-timeline-element-icon.vertical-timeline-element-icon--button .fab-button {
+  width: 40px;
+  height: 40px;
+}
+
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline-element-icon.vertical-timeline-element-icon--button .fab-button {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+.vertical-timeline-element-icon.vertical-timeline-element-icon--button svg {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  left: auto;
+  top: auto;
+  margin-left: auto;
+  margin-top: auto;
+}

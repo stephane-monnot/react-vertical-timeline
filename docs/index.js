@@ -8,6 +8,7 @@ import WorkIcon from '@material-ui/icons/Work';
 import StarIcon from '@material-ui/icons/Star';
 import 'purecss/build/pure.css';
 
+import VerticalLoadMore from './vertical-load-more';
 import { VerticalTimeline, VerticalTimelineElement } from '../src/index';
 import './main.css';
 import '../style.css';
@@ -127,6 +128,11 @@ const pages = [
     content: () => (
       <VerticalTimeline layout="1-column">{timelineElements}</VerticalTimeline>
     ),
+  },
+  {
+    path: '/demo-load-more',
+    title: 'Demo load more',
+    content: () => <VerticalLoadMore />,
   },
 ];
 
