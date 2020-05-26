@@ -134,6 +134,7 @@ VerticalTimelineElement.defaultProps = {
   id: '',
   style: null,
   date: '',
+  dateClassName: '',
   position: '',
   textClassName: '',
   visibilitySensorProps: { partialVisibility: true, offset: { bottom: 40 } },
