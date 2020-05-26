@@ -21,7 +21,11 @@ const VerticalTimelineElement = ({
   textClassName,
   intersectionObserverProps,
 }) => {
+  const [visible, setVisible] = useState(false);
   const [ref, inView] = useInView(intersectionObserverProps);
+  if (!visible && inView) {
+    setVisible(true);
+  }
 
   return (
     <div
@@ -42,8 +46,8 @@ const VerticalTimelineElement = ({
             iconClassName,
             'vertical-timeline-element-icon',
             {
-              'bounce-in': inView,
-              'is-hidden': !inView,
+              'bounce-in': visible,
+              'is-hidden': !visible,
             }
           )}
         >
@@ -56,8 +60,8 @@ const VerticalTimelineElement = ({
             textClassName,
             'vertical-timeline-element-content',
             {
-              'bounce-in': inView,
-              'is-hidden': !inView,
+              'bounce-in': visible,
+              'is-hidden': !visible,
             }
           )}
         >
@@ -100,8 +104,10 @@ VerticalTimelineElement.propTypes = {
   style: PropTypes.shape({}),
   textClassName: PropTypes.string,
   intersectionObserverProps: PropTypes.shape({
-    onChange: PropTypes.func,
+    root: PropTypes.object,
     rootMargin: PropTypes.string,
+    threshold: PropType.number,
+    triggerOnce: PropTypes.bool,
   }),
 };
 
