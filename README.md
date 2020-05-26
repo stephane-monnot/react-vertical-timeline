@@ -188,10 +188,10 @@ Add extra style to root div element.
 
 Add extra class name to the text container.
 
-### `visibilitySensorProps={ Object }`
+### `intersectionObserverProps={ Object }`
 
-Custom props pass to VisibilitySensor component (default: { partialVisibility: true, offset: { bottom: 80 } }).
-*See [react-visibility-sensor](https://github.com/joshwnj/react-visibility-sensor) for more information.*
+Custom props pass to `useInView` component (default: { rootMargin: '0px 0px 40px 0px' }).
+*See [react-intersection-observer](https://github.com/thebuilder/react-intersection-observer) for more information.*
 
 
 ## Showcase
@@ -210,7 +210,7 @@ $ yarn start
 $ yarn test
 ```
 
-### Watch and Run the tests 
+### Watch and Run the tests
 ```code
 $ yarn test:watch
 ```
