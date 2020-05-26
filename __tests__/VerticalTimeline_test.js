@@ -1,8 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { expect } from 'chai';
+import { mockAllIsIntersecting } from 'react-intersection-observer/test-utils';
 
 import VerticalTimeline from '../src/VerticalTimeline';
+
+beforeEach(() => {
+  mockAllIsIntersecting(true);
+});
 
 describe('VerticalTimeline', () => {
   it('should have the vertical-timeline classname', () => {

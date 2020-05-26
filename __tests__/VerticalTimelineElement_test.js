@@ -3,7 +3,12 @@ import {
   renderIntoDocument,
   scryRenderedDOMComponentsWithClass,
 } from 'react-dom/test-utils';
+import { mockAllIsIntersecting } from 'react-intersection-observer/test-utils';
 import VerticalTimelineElement from '../src/VerticalTimelineElement';
+
+beforeEach(() => {
+  mockAllIsIntersecting(true);
+});
 
 describe('VerticalTimeline', () => {
   it('should have the vertical-timeline-element classname', () => {
