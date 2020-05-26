@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import VisibilitySensor from 'react-visibility-sensor';
+import { useInView } from 'react-intersection-observer';
 
 const VerticalTimelineElement = ({
   children,
@@ -19,23 +19,13 @@ const VerticalTimelineElement = ({
   position,
   style,
   textClassName,
-  visibilitySensorProps,
+  intersectionObserverProps,
 }) => {
-  const [visible, setVisible] = useState(false);
-  const onVisibilitySensorChange = isVisible => {
-    const { onChange } = visibilitySensorProps;
-
-    if (typeof onChange === 'function') {
-      onChange(isVisible);
-    }
-
-    if (isVisible) {
-      setVisible(true);
-    }
-  };
+  const [ref, inView] = useInView(intersectionObserverProps);
 
   return (
     <div
+      ref={ref}
       id={id}
       className={classNames(className, 'vertical-timeline-element', {
         'vertical-timeline-element--left': position === 'left',
@@ -44,53 +34,48 @@ const VerticalTimelineElement = ({
       })}
       style={style}
     >
-      <VisibilitySensor
-        {...visibilitySensorProps}
-        onChange={onVisibilitySensorChange}
-      >
-        <React.Fragment>
-          <span // eslint-disable-line jsx-a11y/no-static-element-interactions
-            style={iconStyle}
-            onClick={iconOnClick}
-            className={classNames(
-              iconClassName,
-              'vertical-timeline-element-icon',
-              {
-                'bounce-in': visible,
-                'is-hidden': !visible,
-              }
-            )}
-          >
-            {icon}
-          </span>
+      <React.Fragment>
+        <span // eslint-disable-line jsx-a11y/no-static-element-interactions
+          style={iconStyle}
+          onClick={iconOnClick}
+          className={classNames(
+            iconClassName,
+            'vertical-timeline-element-icon',
+            {
+              'bounce-in': inView,
+              'is-hidden': !inView,
+            }
+          )}
+        >
+          {icon}
+        </span>
+        <div
+          style={contentStyle}
+          onClick={onTimelineElementClick}
+          className={classNames(
+            textClassName,
+            'vertical-timeline-element-content',
+            {
+              'bounce-in': inView,
+              'is-hidden': !inView,
+            }
+          )}
+        >
           <div
-            style={contentStyle}
-            onClick={onTimelineElementClick}
+            style={contentArrowStyle}
+            className="vertical-timeline-element-content-arrow"
+          />
+          {children}
+          <span
             className={classNames(
-              textClassName,
-              'vertical-timeline-element-content',
-              {
-                'bounce-in': visible,
-                'is-hidden': !visible,
-              }
+              dateClassName,
+              'vertical-timeline-element-date'
             )}
           >
-            <div
-              style={contentArrowStyle}
-              className="vertical-timeline-element-content-arrow"
-            />
-            {children}
-            <span
-              className={classNames(
-                dateClassName,
-                'vertical-timeline-element-date'
-              )}
-            >
-              {date}
-            </span>
-          </div>
-        </React.Fragment>
-      </VisibilitySensor>
+            {date}
+          </span>
+        </div>
+      </React.Fragment>
     </div>
   );
 };
@@ -114,10 +99,9 @@ VerticalTimelineElement.propTypes = {
   position: PropTypes.string,
   style: PropTypes.shape({}),
   textClassName: PropTypes.string,
-  visibilitySensorProps: PropTypes.shape({
+  intersectionObserverProps: PropTypes.shape({
     onChange: PropTypes.func,
-    partialVisibility: PropTypes.bool,
-    offset: PropTypes.shape({}),
+    rootMargin: PropTypes.string,
   }),
 };
 
@@ -137,7 +121,7 @@ VerticalTimelineElement.defaultProps = {
   dateClassName: '',
   position: '',
   textClassName: '',
-  visibilitySensorProps: { partialVisibility: true, offset: { bottom: 40 } },
+  intersectionObserverProps: { rootMargin: '0px 0px 40px 0px' },
 };
 
 export default VerticalTimelineElement;
