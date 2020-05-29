@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { useInView } from 'react-intersection-observer';
@@ -106,7 +106,7 @@ VerticalTimelineElement.propTypes = {
   intersectionObserverProps: PropTypes.shape({
     root: PropTypes.object,
     rootMargin: PropTypes.string,
-    threshold: PropType.number,
+    threshold: PropTypes.number,
     triggerOnce: PropTypes.bool,
   }),
 };
