@@ -127,7 +127,7 @@ VerticalTimelineElement.defaultProps = {
   dateClassName: '',
   position: '',
   textClassName: '',
-  intersectionObserverProps: { rootMargin: '0px 0px 40px 0px' },
+  intersectionObserverProps: { rootMargin: '0px 0px -40px 0px' },
 };
 
 export default VerticalTimelineElement;
