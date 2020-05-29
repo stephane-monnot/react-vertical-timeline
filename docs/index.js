@@ -19,6 +19,7 @@ const documentationImports = {};
 const timelineElements = [
   <VerticalTimelineElement
     onTimelineElementClick={() => {
+      // eslint-disable-next-line no-alert
       alert('onTimelineElementClick event fired');
     }}
     className="vertical-timeline-element--work"
