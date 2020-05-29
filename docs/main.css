@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .github-corner svg {
     z-index: 1000;
 }
