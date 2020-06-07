@@ -17,12 +17,13 @@ $ npm i react-vertical-timeline-component
 
 ## Usage
 
-```code|lang-jsx
+```js
 ---
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
 ...
+
 
 <VerticalTimeline>
   <VerticalTimelineElement
