@@ -1408,7 +1408,7 @@ striping:
   margin-left: auto;
   margin-top: auto;
 }
-body {
+html, body {
   overflow-x: hidden;
 }
 
@@ -1843,4 +1843,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=catalog.340e60ba.css.map*/
+/*# sourceMappingURL=catalog.ba78c415.css.map*/
