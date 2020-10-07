@@ -68,7 +68,7 @@ describe('VerticalTimeline', () => {
       </VerticalTimeline>
     );
     expect(component.hasClass('vertical-timeline--one-column-left')).to.equal(
-      true,
+      true
     );
   });
 
@@ -80,7 +80,7 @@ describe('VerticalTimeline', () => {
       </VerticalTimeline>
     );
     expect(component.hasClass('vertical-timeline--one-column-left')).to.equal(
-      true,
+      true
     );
   });
 
@@ -89,10 +89,10 @@ describe('VerticalTimeline', () => {
       <VerticalTimeline layout="1-column-right">
         <div>test1</div>
         <div>test2</div>
-      </VerticalTimeline>,
+      </VerticalTimeline>
     );
     expect(component.hasClass('vertical-timeline--one-column-right')).to.equal(
-      true,
+      true
     );
   });
 });

@@ -10,6 +10,7 @@
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
     "test:lint": "eslint . --ignore-path .gitignore",
+    "test:lint:fix": "eslint --fix . --ignore-path .gitignore",
     "gh-pages": "catalog build docs",
     "gh-pages:deploy": "gh-pages -d docs/build",
     "dist:css": "cleancss -o style.min.css style.css",
