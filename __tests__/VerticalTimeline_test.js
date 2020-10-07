@@ -72,6 +72,18 @@ describe('VerticalTimeline', () => {
     );
   });
 
+  it('should have the vertical-timeline--one-column-left classname by default with layout=1-column', () => {
+    const component = shallow(
+      <VerticalTimeline layout="1-column">
+        <div>test1</div>
+        <div>test2</div>
+      </VerticalTimeline>
+    );
+    expect(component.hasClass('vertical-timeline--one-column-left')).to.equal(
+      true,
+    );
+  });
+
   it('should have the vertical-timeline--one-column-right classname with layout=1-column-right', () => {
     const component = shallow(
       <VerticalTimeline layout="1-column-right">
