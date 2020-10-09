@@ -229,7 +229,7 @@ const pages = [
   },
   {
     path: '/demo-single-column-right',
-    title: 'Demo single column rigth',
+    title: 'Demo single column right',
     content: () => (
       <VerticalTimeline layout="1-column-right">
         {rightArrowedTimelineElements}
