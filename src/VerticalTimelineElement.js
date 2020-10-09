@@ -20,8 +20,9 @@ const VerticalTimelineElement = ({
   style,
   textClassName,
   intersectionObserverProps,
+  visible: defaultVisible,
 }) => {
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(defaultVisible);
   const [ref, inView] = useInView(intersectionObserverProps);
   if (!visible && inView) {
     setVisible(true);
@@ -103,6 +104,7 @@ VerticalTimelineElement.propTypes = {
   position: PropTypes.string,
   style: PropTypes.shape({}),
   textClassName: PropTypes.string,
+  visible: PropTypes.bool,
   intersectionObserverProps: PropTypes.shape({
     root: PropTypes.object,
     rootMargin: PropTypes.string,
@@ -127,6 +129,7 @@ VerticalTimelineElement.defaultProps = {
   dateClassName: '',
   position: '',
   textClassName: '',
+  visible: false,
   intersectionObserverProps: { rootMargin: '0px 0px -40px 0px' },
 };
 

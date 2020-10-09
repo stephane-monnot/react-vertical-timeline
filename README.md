@@ -193,6 +193,10 @@ Add extra class name to the text container.
 Custom props pass to `useInView` component (default: { rootMargin: '0px 0px 40px 0px' }).
 *See [react-intersection-observer](https://github.com/thebuilder/react-intersection-observer) for more information.*
 
+### `visible={ Boolean }`
+
+Show element by default even if it is outside of the viewport (default: false).
+
 
 ## Showcase
 
