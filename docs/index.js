@@ -248,7 +248,9 @@ const defaultVisibleTimelineElements = [
     icon={<WorkIcon />}
     visible
   >
-    <h3 className="vertical-timeline-element-title">[VISIBLE BY DEFAULT] Web Designer</h3>
+    <h3 className="vertical-timeline-element-title">
+      [VISIBLE BY DEFAULT] Web Designer
+    </h3>
     <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
     <p>User Experience, Visual Design</p>
   </VerticalTimelineElement>,
@@ -297,7 +299,8 @@ const defaultVisibleTimelineElements = [
     visible
   >
     <h3 className="vertical-timeline-element-title">
-      [VISIBLE BY DEFAULT] Bachelor of Science in Interactive Digital Media Visual Imaging
+      [VISIBLE BY DEFAULT] Bachelor of Science in Interactive Digital Media
+      Visual Imaging
     </h3>
     <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
     <p>Creative Direction, Visual Design</p>
