@@ -221,6 +221,10 @@
   display: none;
 }
 
+.vertical-timeline-element--no-children .vertical-timeline-element-content-arrow {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   .vertical-timeline-element-content h2 {
     font-size: 20px;
