@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { useInView } from 'react-intersection-observer';
+import { InView } from 'react-intersection-observer';
 
 const VerticalTimelineElement = ({
   children,
@@ -23,65 +23,70 @@ const VerticalTimelineElement = ({
   visible: defaultVisible,
 }) => {
   const [visible, setVisible] = useState(defaultVisible);
-  const [ref, inView] = useInView(intersectionObserverProps);
-  if (!visible && inView) {
-    setVisible(true);
-  }
 
   return (
-    <div
-      ref={ref}
-      id={id}
-      className={classNames(className, 'vertical-timeline-element', {
-        'vertical-timeline-element--left': position === 'left',
-        'vertical-timeline-element--right': position === 'right',
-        'vertical-timeline-element--no-children': children === '',
-      })}
-      style={style}
-    >
-      <React.Fragment>
-        <span // eslint-disable-line jsx-a11y/no-static-element-interactions
-          style={iconStyle}
-          onClick={iconOnClick}
-          className={classNames(
-            iconClassName,
-            'vertical-timeline-element-icon',
-            {
-              'bounce-in': visible,
-              'is-hidden': !visible,
-            }
-          )}
-        >
-          {icon}
-        </span>
-        <div
-          style={contentStyle}
-          onClick={onTimelineElementClick}
-          className={classNames(
-            textClassName,
-            'vertical-timeline-element-content',
-            {
-              'bounce-in': visible,
-              'is-hidden': !visible,
-            }
-          )}
-        >
+    <InView {...intersectionObserverProps}>
+      {({ inView, ref }) => {
+        if (!visible && inView) {
+          setVisible(true);
+        }
+        return (
           <div
-            style={contentArrowStyle}
-            className="vertical-timeline-element-content-arrow"
-          />
-          {children}
-          <span
-            className={classNames(
-              dateClassName,
-              'vertical-timeline-element-date'
-            )}
+            ref={ref}
+            id={id}
+            className={classNames(className, 'vertical-timeline-element', {
+              'vertical-timeline-element--left': position === 'left',
+              'vertical-timeline-element--right': position === 'right',
+              'vertical-timeline-element--no-children': children === '',
+            })}
+            style={style}
           >
-            {date}
-          </span>
-        </div>
-      </React.Fragment>
-    </div>
+            <React.Fragment>
+              <span // eslint-disable-line jsx-a11y/no-static-element-interactions
+                style={iconStyle}
+                onClick={iconOnClick}
+                className={classNames(
+                  iconClassName,
+                  'vertical-timeline-element-icon',
+                  {
+                    'bounce-in': visible,
+                    'is-hidden': !visible,
+                  }
+                )}
+              >
+                {icon}
+              </span>
+              <div
+                style={contentStyle}
+                onClick={onTimelineElementClick}
+                className={classNames(
+                  textClassName,
+                  'vertical-timeline-element-content',
+                  {
+                    'bounce-in': visible,
+                    'is-hidden': !visible,
+                  }
+                )}
+              >
+                <div
+                  style={contentArrowStyle}
+                  className="vertical-timeline-element-content-arrow"
+                />
+                {children}
+                <span
+                  className={classNames(
+                    dateClassName,
+                    'vertical-timeline-element-date'
+                  )}
+                >
+                  {date}
+                </span>
+              </div>
+            </React.Fragment>
+          </div>
+        );
+      }}
+    </InView>
   );
 };
 
