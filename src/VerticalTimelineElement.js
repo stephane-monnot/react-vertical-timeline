@@ -20,75 +20,66 @@ const VerticalTimelineElement = ({
   style,
   textClassName,
   intersectionObserverProps,
-  visible: defaultVisible,
-}) => {
-  const [visible, setVisible] = useState(defaultVisible);
-
-  return (
-    <InView {...intersectionObserverProps}>
-      {({ inView, ref }) => {
-        if (!visible && inView) {
-          setVisible(true);
-        }
-        return (
-          <div
-            ref={ref}
-            id={id}
-            className={classNames(className, 'vertical-timeline-element', {
-              'vertical-timeline-element--left': position === 'left',
-              'vertical-timeline-element--right': position === 'right',
-              'vertical-timeline-element--no-children': children === '',
-            })}
-            style={style}
+  visible,
+}) => (
+  <InView {...intersectionObserverProps}>
+    {({ inView, ref }) => (
+      <div
+        ref={ref}
+        id={id}
+        className={classNames(className, 'vertical-timeline-element', {
+          'vertical-timeline-element--left': position === 'left',
+          'vertical-timeline-element--right': position === 'right',
+          'vertical-timeline-element--no-children': children === '',
+        })}
+        style={style}
+      >
+        <React.Fragment>
+          <span // eslint-disable-line jsx-a11y/no-static-element-interactions
+            style={iconStyle}
+            onClick={iconOnClick}
+            className={classNames(
+              iconClassName,
+              'vertical-timeline-element-icon',
+              {
+                'bounce-in': inView || visible,
+                'is-hidden': !(inView || visible),
+              }
+            )}
           >
-            <React.Fragment>
-              <span // eslint-disable-line jsx-a11y/no-static-element-interactions
-                style={iconStyle}
-                onClick={iconOnClick}
-                className={classNames(
-                  iconClassName,
-                  'vertical-timeline-element-icon',
-                  {
-                    'bounce-in': visible,
-                    'is-hidden': !visible,
-                  }
-                )}
-              >
-                {icon}
-              </span>
-              <div
-                style={contentStyle}
-                onClick={onTimelineElementClick}
-                className={classNames(
-                  textClassName,
-                  'vertical-timeline-element-content',
-                  {
-                    'bounce-in': visible,
-                    'is-hidden': !visible,
-                  }
-                )}
-              >
-                <div
-                  style={contentArrowStyle}
-                  className="vertical-timeline-element-content-arrow"
-                />
-                {children}
-                <span
-                  className={classNames(
-                    dateClassName,
-                    'vertical-timeline-element-date'
-                  )}
-                >
-                  {date}
-                </span>
-              </div>
-            </React.Fragment>
+            {icon}
+          </span>
+          <div
+            style={contentStyle}
+            onClick={onTimelineElementClick}
+            className={classNames(
+              textClassName,
+              'vertical-timeline-element-content',
+              {
+                'bounce-in': inView || visible,
+                'is-hidden': !(inView || visible),
+              }
+            )}
+          >
+            <div
+              style={contentArrowStyle}
+              className="vertical-timeline-element-content-arrow"
+            />
+            {children}
+            <span
+              className={classNames(
+                dateClassName,
+                'vertical-timeline-element-date'
+              )}
+            >
+              {date}
+            </span>
           </div>
-        );
-      }}
-    </InView>
-  );
-};
+        </React.Fragment>
+      </div>
+    )}
+  </InView>
+);
 
 VerticalTimelineElement.propTypes = {
   children: PropTypes.oneOfType([
