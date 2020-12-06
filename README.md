@@ -198,7 +198,7 @@ Show element by default even if it is outside of the viewport (default: false).
 
 ## Showcase
 
-* [My resume (Stéphane Monnot)](https://stephanemonnot.com/).
+* [My resume (Atef Ben Ali)](https://atefbb.github.io/cv-react-app/).
 
 
 ## For development
