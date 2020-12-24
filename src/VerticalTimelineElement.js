@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
 import { InView } from 'react-intersection-observer';
+import PropTypes from 'prop-types';
+import React from 'react';
+import classNames from 'classnames';
 
 const VerticalTimelineElement = ({
   children,
@@ -43,7 +43,7 @@ const VerticalTimelineElement = ({
               'vertical-timeline-element-icon',
               {
                 'bounce-in': inView || visible,
-                'is-hidden': !(inView || visible),
+                'vertical-timeline-is-hidden': !(inView || visible),
               }
             )}
           >
@@ -57,7 +57,7 @@ const VerticalTimelineElement = ({
               'vertical-timeline-element-content',
               {
                 'bounce-in': inView || visible,
-                'is-hidden': !(inView || visible),
+                'vertical-timeline-is-hidden': !(inView || visible),
               }
             )}
           >

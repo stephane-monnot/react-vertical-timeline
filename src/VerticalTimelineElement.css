@@ -68,7 +68,7 @@
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
 }
-.vertical-timeline--animate .vertical-timeline-element-icon.is-hidden {
+.vertical-timeline--animate .vertical-timeline-element-icon.vertical-timeline-is-hidden {
   visibility: hidden;
 }
 .vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
@@ -289,7 +289,7 @@
 }
 
 /* Box animations */
-.vertical-timeline--animate .vertical-timeline-element-content.is-hidden {
+.vertical-timeline--animate .vertical-timeline-element-content.vertical-timeline-is-hidden {
   visibility: hidden;
 }
 .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
