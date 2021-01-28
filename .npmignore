@@ -2,5 +2,6 @@ demo/
 dist/
 tests/
 src/
+docs/
 .*
 
