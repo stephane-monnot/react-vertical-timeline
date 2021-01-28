@@ -3,5 +3,8 @@ dist/
 tests/
 src/
 docs/
+__tests__/
+coverage/
+package-lock.json
 .*
 
