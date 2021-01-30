@@ -24,7 +24,7 @@
   left: 18px;
   height: 100%;
   width: 4px;
-  background: white;
+  background: var(--line-color);
 }
 
 .vertical-timeline.vertical-timeline--one-column-right::before {

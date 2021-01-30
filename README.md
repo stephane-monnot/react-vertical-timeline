@@ -133,6 +133,9 @@ Add extra class name to root div element.
 
 Choose if you want `'1-column-left'` or `'1-column-right'` or `'2-columns'` (default: `'2-columns'`).
 
+### `lineColor={ String }`
+
+Choose a color for the timeline (default: `'white'`).
 
 ## VerticalTimelineElement Props
 
