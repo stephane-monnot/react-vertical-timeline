@@ -16,13 +16,11 @@ $ npm i react-vertical-timeline-component
 
 
 ## Usage
-
-```code|lang-jsx
----
+```js
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-...
+// ...
 
 <VerticalTimeline>
   <VerticalTimelineElement
@@ -200,7 +198,7 @@ Show element by default even if it is outside of the viewport (default: false).
 
 ## Showcase
 
-* [My resume (Stéphane Monnot)](https://stephanemonnot.com/).
+* [My resume (Atef Ben Ali)](https://atefbb.github.io/cv-react-app/).
 
 
 ## For development
