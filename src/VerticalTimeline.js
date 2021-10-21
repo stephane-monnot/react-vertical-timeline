@@ -9,7 +9,9 @@ const VerticalTimeline = ({
   lineColor,
   children,
 }) => {
-  document.documentElement.style.setProperty('--line-color', lineColor);
+  if (typeof window === 'object') {
+    document.documentElement.style.setProperty('--line-color', lineColor);
+  }
   return (
     <div
       className={classNames(className, 'vertical-timeline', {
