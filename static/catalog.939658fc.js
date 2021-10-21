@@ -57829,6 +57829,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames__ = __webpack_require__(361);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_classnames__);
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
 
 
 
@@ -57840,7 +57842,9 @@ var VerticalTimeline = function VerticalTimeline(_ref) {
       lineColor = _ref.lineColor,
       children = _ref.children;
 
-  document.documentElement.style.setProperty('--line-color', lineColor);
+  if ((typeof window === 'undefined' ? 'undefined' : _typeof(window)) === 'object') {
+    document.documentElement.style.setProperty('--line-color', lineColor);
+  }
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
     {
@@ -58501,4 +58505,4 @@ function useInView(_temp) {
 
 /***/ })
 ],[363]);
-//# sourceMappingURL=catalog.c89bb32e.js.map
+//# sourceMappingURL=catalog.939658fc.js.map
