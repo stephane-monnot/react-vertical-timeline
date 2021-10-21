@@ -126,7 +126,10 @@ VerticalTimelineElement.defaultProps = {
   position: '',
   textClassName: '',
   visible: false,
-  intersectionObserverProps: { rootMargin: '0px 0px -40px 0px', 'triggerOnce': true },
+  intersectionObserverProps: {
+    rootMargin: '0px 0px -40px 0px',
+    triggerOnce: true,
+  },
 };
 
 export default VerticalTimelineElement;
