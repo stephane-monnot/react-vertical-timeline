@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 const VerticalTimeline = ({
-  animate,
-  className,
-  layout,
-  lineColor,
+  animate = true,
+  className = '',
+  layout = '2-columns',
+  lineColor = '#FFF',
   children,
 }) => {
   if (typeof window === 'object') {
@@ -41,13 +41,6 @@ VerticalTimeline.propTypes = {
     '1-column-right',
   ]),
   lineColor: PropTypes.string,
-};
-
-VerticalTimeline.defaultProps = {
-  animate: true,
-  className: '',
-  layout: '2-columns',
-  lineColor: '#FFF',
 };
 
 export default VerticalTimeline;
