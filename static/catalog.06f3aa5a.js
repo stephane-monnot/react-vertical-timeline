@@ -57836,10 +57836,14 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 
 var VerticalTimeline = function VerticalTimeline(_ref) {
-  var animate = _ref.animate,
-      className = _ref.className,
-      layout = _ref.layout,
-      lineColor = _ref.lineColor,
+  var _ref$animate = _ref.animate,
+      animate = _ref$animate === undefined ? true : _ref$animate,
+      _ref$className = _ref.className,
+      className = _ref$className === undefined ? '' : _ref$className,
+      _ref$layout = _ref.layout,
+      layout = _ref$layout === undefined ? '2-columns' : _ref$layout,
+      _ref$lineColor = _ref.lineColor,
+      lineColor = _ref$lineColor === undefined ? '#FFF' : _ref$lineColor,
       children = _ref.children;
 
   if ((typeof window === 'undefined' ? 'undefined' : _typeof(window)) === 'object') {
@@ -57867,13 +57871,6 @@ VerticalTimeline.propTypes = {
   lineColor: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string
 };
 
-VerticalTimeline.defaultProps = {
-  animate: true,
-  className: '',
-  layout: '2-columns',
-  lineColor: '#FFF'
-};
-
 /* harmony default export */ __webpack_exports__["default"] = (VerticalTimeline);
 
 /***/ }),
@@ -57895,23 +57892,43 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 var VerticalTimelineElement = function VerticalTimelineElement(_ref) {
-  var children = _ref.children,
-      className = _ref.className,
-      contentArrowStyle = _ref.contentArrowStyle,
-      contentStyle = _ref.contentStyle,
-      date = _ref.date,
-      dateClassName = _ref.dateClassName,
-      icon = _ref.icon,
-      iconClassName = _ref.iconClassName,
-      iconOnClick = _ref.iconOnClick,
-      onTimelineElementClick = _ref.onTimelineElementClick,
-      iconStyle = _ref.iconStyle,
-      id = _ref.id,
-      position = _ref.position,
-      style = _ref.style,
-      textClassName = _ref.textClassName,
-      intersectionObserverProps = _ref.intersectionObserverProps,
-      visible = _ref.visible;
+  var _ref$children = _ref.children,
+      children = _ref$children === undefined ? '' : _ref$children,
+      _ref$className = _ref.className,
+      className = _ref$className === undefined ? '' : _ref$className,
+      _ref$contentArrowStyl = _ref.contentArrowStyle,
+      contentArrowStyle = _ref$contentArrowStyl === undefined ? null : _ref$contentArrowStyl,
+      _ref$contentStyle = _ref.contentStyle,
+      contentStyle = _ref$contentStyle === undefined ? null : _ref$contentStyle,
+      _ref$date = _ref.date,
+      date = _ref$date === undefined ? '' : _ref$date,
+      _ref$dateClassName = _ref.dateClassName,
+      dateClassName = _ref$dateClassName === undefined ? '' : _ref$dateClassName,
+      _ref$icon = _ref.icon,
+      icon = _ref$icon === undefined ? null : _ref$icon,
+      _ref$iconClassName = _ref.iconClassName,
+      iconClassName = _ref$iconClassName === undefined ? '' : _ref$iconClassName,
+      _ref$iconOnClick = _ref.iconOnClick,
+      iconOnClick = _ref$iconOnClick === undefined ? null : _ref$iconOnClick,
+      _ref$onTimelineElemen = _ref.onTimelineElementClick,
+      onTimelineElementClick = _ref$onTimelineElemen === undefined ? null : _ref$onTimelineElemen,
+      _ref$iconStyle = _ref.iconStyle,
+      iconStyle = _ref$iconStyle === undefined ? null : _ref$iconStyle,
+      _ref$id = _ref.id,
+      id = _ref$id === undefined ? '' : _ref$id,
+      _ref$position = _ref.position,
+      position = _ref$position === undefined ? '' : _ref$position,
+      _ref$style = _ref.style,
+      style = _ref$style === undefined ? null : _ref$style,
+      _ref$textClassName = _ref.textClassName,
+      textClassName = _ref$textClassName === undefined ? '' : _ref$textClassName,
+      _ref$intersectionObse = _ref.intersectionObserverProps,
+      intersectionObserverProps = _ref$intersectionObse === undefined ? {
+    rootMargin: '0px 0px -40px 0px',
+    triggerOnce: true
+  } : _ref$intersectionObse,
+      _ref$visible = _ref.visible,
+      visible = _ref$visible === undefined ? false : _ref$visible;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     __WEBPACK_IMPORTED_MODULE_3_react_intersection_observer__["a" /* InView */],
     intersectionObserverProps,
@@ -57997,29 +58014,6 @@ VerticalTimelineElement.propTypes = {
     threshold: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.number,
     triggerOnce: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool
   })
-};
-
-VerticalTimelineElement.defaultProps = {
-  children: '',
-  className: '',
-  contentArrowStyle: null,
-  contentStyle: null,
-  icon: null,
-  iconClassName: '',
-  iconOnClick: null,
-  onTimelineElementClick: null,
-  iconStyle: null,
-  id: '',
-  style: null,
-  date: '',
-  dateClassName: '',
-  position: '',
-  textClassName: '',
-  visible: false,
-  intersectionObserverProps: {
-    rootMargin: '0px 0px -40px 0px',
-    triggerOnce: true
-  }
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (VerticalTimelineElement);
@@ -58505,4 +58499,4 @@ function useInView(_temp) {
 
 /***/ })
 ],[363]);
-//# sourceMappingURL=catalog.939658fc.js.map
+//# sourceMappingURL=catalog.06f3aa5a.js.map
