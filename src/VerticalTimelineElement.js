@@ -4,23 +4,26 @@ import classNames from 'classnames';
 import { InView } from 'react-intersection-observer';
 
 const VerticalTimelineElement = ({
-  children,
-  className,
-  contentArrowStyle,
-  contentStyle,
-  date,
-  dateClassName,
-  icon,
-  iconClassName,
-  iconOnClick,
-  onTimelineElementClick,
-  iconStyle,
-  id,
-  position,
-  style,
-  textClassName,
-  intersectionObserverProps,
-  visible,
+  children = '',
+  className = '',
+  contentArrowStyle = null,
+  contentStyle = null,
+  date = '',
+  dateClassName = '',
+  icon = null,
+  iconClassName = '',
+  iconOnClick = null,
+  onTimelineElementClick = null,
+  iconStyle = null,
+  id = '',
+  position = '',
+  style = null,
+  textClassName = '',
+  intersectionObserverProps = {
+    rootMargin: '0px 0px -40px 0px',
+    triggerOnce: true,
+  },
+  visible = false,
 }) => (
   <InView {...intersectionObserverProps}>
     {({ inView, ref }) => (
@@ -107,29 +110,6 @@ VerticalTimelineElement.propTypes = {
     threshold: PropTypes.number,
     triggerOnce: PropTypes.bool,
   }),
-};
-
-VerticalTimelineElement.defaultProps = {
-  children: '',
-  className: '',
-  contentArrowStyle: null,
-  contentStyle: null,
-  icon: null,
-  iconClassName: '',
-  iconOnClick: null,
-  onTimelineElementClick: null,
-  iconStyle: null,
-  id: '',
-  style: null,
-  date: '',
-  dateClassName: '',
-  position: '',
-  textClassName: '',
-  visible: false,
-  intersectionObserverProps: {
-    rootMargin: '0px 0px -40px 0px',
-    triggerOnce: true,
-  },
 };
 
 export default VerticalTimelineElement;
