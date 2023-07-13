@@ -24,6 +24,7 @@ const VerticalTimelineElement = ({
     triggerOnce: true,
   },
   visible = false,
+  shadowSize = 'small', // small | medium | large
 }) => (
   <InView {...intersectionObserverProps}>
     {({ inView, ref }) => (
@@ -44,6 +45,7 @@ const VerticalTimelineElement = ({
             className={classNames(
               iconClassName,
               'vertical-timeline-element-icon',
+              `shadow-size-${shadowSize}`, // for shadow size
               {
                 'bounce-in': inView || visible,
                 'is-hidden': !(inView || visible),
@@ -104,6 +106,7 @@ VerticalTimelineElement.propTypes = {
   style: PropTypes.shape({}),
   textClassName: PropTypes.string,
   visible: PropTypes.bool,
+  shadowSize: PropTypes.string,
   intersectionObserverProps: PropTypes.shape({
     root: PropTypes.object,
     rootMargin: PropTypes.string,
