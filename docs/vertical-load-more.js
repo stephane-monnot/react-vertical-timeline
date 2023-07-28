@@ -73,6 +73,7 @@ const VerticalLoadMore = () => {
           iconOnClick={loadMore}
           iconClassName="vertical-timeline-element-icon--button"
           icon={addButton()}
+          shadowSize="small" // small, medium or large
         />
       </VerticalTimeline>
     </div>

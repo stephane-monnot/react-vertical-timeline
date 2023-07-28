@@ -167,6 +167,10 @@ Icon of the element.
 
 Add extra class name to the element's icon.
 
+### `shadowSize={ String }`
+
+Shadow size for icon (default: `'small'`). Available sizes are `'small'`, `'medium'` and `'large'`.
+
 ### `iconOnClick={ Function }`
 
 onClick handler of the element's icon.
