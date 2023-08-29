@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
+import React from 'react';
 import { InView } from 'react-intersection-observer';
 
 const VerticalTimelineElement = ({
@@ -71,14 +71,16 @@ const VerticalTimelineElement = ({
               className="vertical-timeline-element-content-arrow"
             />
             {children}
-            <span
-              className={classNames(
-                dateClassName,
-                'vertical-timeline-element-date'
-              )}
-            >
-              {date}
-            </span>
+            {date && (
+              <span
+                className={classNames(
+                  'vertical-timeline-element-date',
+                  dateClassName
+                )}
+              >
+                {date}
+              </span>
+            )}
           </div>
         </React.Fragment>
       </div>
