@@ -1553,8 +1553,20 @@ html, body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+.vertical-timeline-element-icon.shadow-size-small {
+  -webkit-box-shadow: 0 0 0 2px white, inset 0 1px 0 rgba(0, 0, 0, 0.08), 0 2px 0 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 0 2px white, inset 0 1px 0 rgba(0, 0, 0, 0.08), 0 2px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.vertical-timeline-element-icon.shadow-size-medium {
+  -webkit-box-shadow: 0 0 0 3px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 0 3px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.vertical-timeline-element-icon.shadow-size-large {
+  -webkit-box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 4px 0 6px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 4px 0 6px rgba(0, 0, 0, 0.05);
 }
 .vertical-timeline--one-column-right .vertical-timeline-element-icon {
   right: 0;
@@ -1893,4 +1905,4 @@ html, body {
   }
 }
 
-/*# sourceMappingURL=catalog.00e33a2f.css.map*/
+/*# sourceMappingURL=catalog.7c1054b8.css.map*/

@@ -28511,179 +28511,181 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 // Add your documentation imports here. These are available to
 // React specimen. Do NOT pass React here as Catalog does that.
 var documentationImports = {};
-var timelineElements = [__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-  __WEBPACK_IMPORTED_MODULE_9__src_index__["VerticalTimelineElement"],
-  {
-    onTimelineElementClick: function onTimelineElementClick() {
-      // eslint-disable-next-line no-alert
-      alert('onTimelineElementClick event fired');
-    },
-    className: 'vertical-timeline-element--work',
-    contentStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
-    contentArrowStyle: { borderRight: '7px solid  rgb(33, 150, 243)' },
-    date: '2011 - present',
-    iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
-    icon: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__material_ui_icons_Work___default.a, null)
-  },
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'h3',
-    { className: 'vertical-timeline-element-title' },
-    'Creative Director'
-  ),
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'h4',
-    { className: 'vertical-timeline-element-subtitle' },
-    'Miami, FL'
-  ),
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'p',
-    null,
-    'Creative Direction, User Experience, Visual Design, Project Management, Team Leading'
-  )
-), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-  __WEBPACK_IMPORTED_MODULE_9__src_index__["VerticalTimelineElement"],
-  {
-    className: 'vertical-timeline-element--work',
-    date: '2010 - 2011',
-    iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
-    icon: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__material_ui_icons_Work___default.a, null)
-  },
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'h3',
-    { className: 'vertical-timeline-element-title' },
-    'Art Director'
-  ),
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'h4',
-    { className: 'vertical-timeline-element-subtitle' },
-    'San Francisco, CA'
-  ),
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'p',
-    null,
-    'Creative Direction, User Experience, Visual Design, SEO, Online Marketing'
-  )
-), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-  __WEBPACK_IMPORTED_MODULE_9__src_index__["VerticalTimelineElement"],
-  {
-    className: 'vertical-timeline-element--work',
-    date: '2008 - 2010',
-    iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
-    icon: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__material_ui_icons_Work___default.a, null)
-  },
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'h3',
-    { className: 'vertical-timeline-element-title' },
-    'Web Designer'
-  ),
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'h4',
-    { className: 'vertical-timeline-element-subtitle' },
-    'Los Angeles, CA'
-  ),
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'p',
-    null,
-    'User Experience, Visual Design'
-  )
-), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-  __WEBPACK_IMPORTED_MODULE_9__src_index__["VerticalTimelineElement"],
-  {
-    className: 'vertical-timeline-element--work',
-    date: '2006 - 2008',
-    iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
-    icon: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__material_ui_icons_Work___default.a, null)
-  },
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'h3',
-    { className: 'vertical-timeline-element-title' },
-    'Web Designer'
-  ),
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'h4',
-    { className: 'vertical-timeline-element-subtitle' },
-    'San Francisco, CA'
-  ),
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'p',
-    null,
-    'User Experience, Visual Design'
-  )
-), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-  __WEBPACK_IMPORTED_MODULE_9__src_index__["VerticalTimelineElement"],
-  {
-    className: 'vertical-timeline-element--education',
-    contentStyle: { background: 'rgb(233, 30, 99)', color: '#fff' },
-    contentArrowStyle: { borderRight: '7px solid  rgb(233, 30, 99)' },
-    date: 'April 2013',
-    iconStyle: { background: 'rgb(233, 30, 99)', color: '#fff' },
-    icon: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__material_ui_icons_School___default.a, null)
-  },
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'h3',
-    { className: 'vertical-timeline-element-title' },
-    'Content Marketing for Web, Mobile and Social Media'
-  ),
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'h4',
-    { className: 'vertical-timeline-element-subtitle' },
-    'Online Course'
-  ),
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'p',
-    null,
-    'Strategy, Social Media'
-  )
-), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-  __WEBPACK_IMPORTED_MODULE_9__src_index__["VerticalTimelineElement"],
-  {
-    className: 'vertical-timeline-element--education',
-    date: 'November 2012',
-    iconStyle: { background: 'rgb(233, 30, 99)', color: '#fff' },
-    icon: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__material_ui_icons_School___default.a, null)
-  },
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'h3',
-    { className: 'vertical-timeline-element-title' },
-    'Agile Development Scrum Master'
-  ),
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'h4',
-    { className: 'vertical-timeline-element-subtitle' },
-    'Certification'
-  ),
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'p',
-    null,
-    'Creative Direction, User Experience, Visual Design'
-  )
-), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-  __WEBPACK_IMPORTED_MODULE_9__src_index__["VerticalTimelineElement"],
-  {
-    className: 'vertical-timeline-element--education',
-    date: '2002 - 2006',
-    iconStyle: { background: 'rgb(233, 30, 99)', color: '#fff' },
-    icon: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__material_ui_icons_School___default.a, null)
-  },
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'h3',
-    { className: 'vertical-timeline-element-title' },
-    'Bachelor of Science in Interactive Digital Media Visual Imaging'
-  ),
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'h4',
-    { className: 'vertical-timeline-element-subtitle' },
-    'Bachelor Degree'
-  ),
-  __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'p',
-    null,
-    'Creative Direction, Visual Design'
-  )
-), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9__src_index__["VerticalTimelineElement"], {
-  iconStyle: { background: 'rgb(16, 204, 82)', color: '#fff' },
-  icon: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__material_ui_icons_Star___default.a, null)
-})];
+var timelineElements = function timelineElements(params) {
+  return [__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    __WEBPACK_IMPORTED_MODULE_9__src_index__["VerticalTimelineElement"],
+    Object.assign({
+      onTimelineElementClick: function onTimelineElementClick() {
+        // eslint-disable-next-line no-alert
+        alert('onTimelineElementClick event fired');
+      },
+      className: 'vertical-timeline-element--work',
+      contentStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
+      contentArrowStyle: { borderRight: '7px solid  rgb(33, 150, 243)' },
+      date: '2011 - present',
+      iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
+      icon: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__material_ui_icons_Work___default.a, null)
+    }, params),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'h3',
+      { className: 'vertical-timeline-element-title' },
+      'Creative Director'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'h4',
+      { className: 'vertical-timeline-element-subtitle' },
+      'Miami, FL'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'p',
+      null,
+      'Creative Direction, User Experience, Visual Design, Project Management, Team Leading'
+    )
+  ), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    __WEBPACK_IMPORTED_MODULE_9__src_index__["VerticalTimelineElement"],
+    Object.assign({
+      className: 'vertical-timeline-element--work',
+      date: '2010 - 2011',
+      iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
+      icon: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__material_ui_icons_Work___default.a, null)
+    }, params),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'h3',
+      { className: 'vertical-timeline-element-title' },
+      'Art Director'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'h4',
+      { className: 'vertical-timeline-element-subtitle' },
+      'San Francisco, CA'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'p',
+      null,
+      'Creative Direction, User Experience, Visual Design, SEO, Online Marketing'
+    )
+  ), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    __WEBPACK_IMPORTED_MODULE_9__src_index__["VerticalTimelineElement"],
+    Object.assign({
+      className: 'vertical-timeline-element--work',
+      date: '2008 - 2010',
+      iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
+      icon: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__material_ui_icons_Work___default.a, null)
+    }, params),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'h3',
+      { className: 'vertical-timeline-element-title' },
+      'Web Designer'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'h4',
+      { className: 'vertical-timeline-element-subtitle' },
+      'Los Angeles, CA'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'p',
+      null,
+      'User Experience, Visual Design'
+    )
+  ), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    __WEBPACK_IMPORTED_MODULE_9__src_index__["VerticalTimelineElement"],
+    Object.assign({
+      className: 'vertical-timeline-element--work',
+      date: '2006 - 2008',
+      iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
+      icon: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__material_ui_icons_Work___default.a, null)
+    }, params),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'h3',
+      { className: 'vertical-timeline-element-title' },
+      'Web Designer'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'h4',
+      { className: 'vertical-timeline-element-subtitle' },
+      'San Francisco, CA'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'p',
+      null,
+      'User Experience, Visual Design'
+    )
+  ), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    __WEBPACK_IMPORTED_MODULE_9__src_index__["VerticalTimelineElement"],
+    Object.assign({
+      className: 'vertical-timeline-element--education',
+      contentStyle: { background: 'rgb(233, 30, 99)', color: '#fff' },
+      contentArrowStyle: { borderRight: '7px solid  rgb(233, 30, 99)' },
+      date: 'April 2013',
+      iconStyle: { background: 'rgb(233, 30, 99)', color: '#fff' },
+      icon: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__material_ui_icons_School___default.a, null)
+    }, params),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'h3',
+      { className: 'vertical-timeline-element-title' },
+      'Content Marketing for Web, Mobile and Social Media'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'h4',
+      { className: 'vertical-timeline-element-subtitle' },
+      'Online Course'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'p',
+      null,
+      'Strategy, Social Media'
+    )
+  ), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    __WEBPACK_IMPORTED_MODULE_9__src_index__["VerticalTimelineElement"],
+    Object.assign({
+      className: 'vertical-timeline-element--education',
+      date: 'November 2012',
+      iconStyle: { background: 'rgb(233, 30, 99)', color: '#fff' },
+      icon: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__material_ui_icons_School___default.a, null)
+    }, params),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'h3',
+      { className: 'vertical-timeline-element-title' },
+      'Agile Development Scrum Master'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'h4',
+      { className: 'vertical-timeline-element-subtitle' },
+      'Certification'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'p',
+      null,
+      'Creative Direction, User Experience, Visual Design'
+    )
+  ), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    __WEBPACK_IMPORTED_MODULE_9__src_index__["VerticalTimelineElement"],
+    Object.assign({
+      className: 'vertical-timeline-element--education',
+      date: '2002 - 2006',
+      iconStyle: { background: 'rgb(233, 30, 99)', color: '#fff' },
+      icon: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__material_ui_icons_School___default.a, null)
+    }, params),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'h3',
+      { className: 'vertical-timeline-element-title' },
+      'Bachelor of Science in Interactive Digital Media Visual Imaging'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'h4',
+      { className: 'vertical-timeline-element-subtitle' },
+      'Bachelor Degree'
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'p',
+      null,
+      'Creative Direction, Visual Design'
+    )
+  ), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9__src_index__["VerticalTimelineElement"], Object.assign({
+    iconStyle: { background: 'rgb(16, 204, 82)', color: '#fff' },
+    icon: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__material_ui_icons_Star___default.a, null)
+  }, params))];
+};
 
 // raw styling on arrows makes them inverted on the 1-column right case.
 var rightArrowedTimelineElements = [__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -29074,7 +29076,7 @@ var pages = [{
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_9__src_index__["VerticalTimeline"],
       null,
-      timelineElements
+      timelineElements()
     );
   }
 }, {
@@ -29084,7 +29086,7 @@ var pages = [{
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_9__src_index__["VerticalTimeline"],
       { layout: '1-column' },
-      timelineElements
+      timelineElements()
     );
   }
 }, {
@@ -29120,7 +29122,22 @@ var pages = [{
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_9__src_index__["VerticalTimeline"],
       { className: 'vertical-timeline-custom-line' },
-      timelineElements
+      timelineElements()
+    );
+  }
+}, {
+  path: '/demo-effect',
+  title: 'Demo effect trigger multiple times',
+  content: function content() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_9__src_index__["VerticalTimeline"],
+      { className: 'vertical-timeline-custom-line' },
+      timelineElements({
+        intersectionObserverProps: {
+          rootMargin: '0px 0px -40px 0px',
+          triggerOnce: false
+        }
+      })
     );
   }
 }];
@@ -55444,7 +55461,8 @@ var VerticalLoadMore = function VerticalLoadMore() {
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__src_index__["VerticalTimelineElement"], {
         iconOnClick: loadMore,
         iconClassName: 'vertical-timeline-element-icon--button',
-        icon: addButton()
+        icon: addButton(),
+        shadowSize: 'small' // small, medium or large
       })
     )
   );
@@ -57928,7 +57946,9 @@ var VerticalTimelineElement = function VerticalTimelineElement(_ref) {
     triggerOnce: true
   } : _ref$intersectionObse,
       _ref$visible = _ref.visible,
-      visible = _ref$visible === undefined ? false : _ref$visible;
+      visible = _ref$visible === undefined ? false : _ref$visible,
+      _ref$shadowSize = _ref.shadowSize,
+      shadowSize = _ref$shadowSize === undefined ? 'small' : _ref$shadowSize;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     __WEBPACK_IMPORTED_MODULE_3_react_intersection_observer__["a" /* InView */],
     intersectionObserverProps,
@@ -57955,7 +57975,8 @@ var VerticalTimelineElement = function VerticalTimelineElement(_ref) {
             { // eslint-disable-line jsx-a11y/no-static-element-interactions
               style: iconStyle,
               onClick: iconOnClick,
-              className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(iconClassName, 'vertical-timeline-element-icon', {
+              className: __WEBPACK_IMPORTED_MODULE_2_classnames___default()(iconClassName, 'vertical-timeline-element-icon', 'shadow-size-' + shadowSize, // for shadow size
+              {
                 'bounce-in': inView || visible,
                 'is-hidden': !(inView || visible)
               })
@@ -58008,6 +58029,7 @@ VerticalTimelineElement.propTypes = {
   style: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.shape({}),
   textClassName: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
   visible: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool,
+  shadowSize: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
   intersectionObserverProps: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.shape({
     root: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.object,
     rootMargin: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string,
@@ -58499,4 +58521,4 @@ function useInView(_temp) {
 
 /***/ })
 ],[363]);
-//# sourceMappingURL=catalog.06f3aa5a.js.map
+//# sourceMappingURL=catalog.bf234c10.js.map
