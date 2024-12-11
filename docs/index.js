@@ -16,7 +16,7 @@ import '../style.css';
 // Add your documentation imports here. These are available to
 // React specimen. Do NOT pass React here as Catalog does that.
 const documentationImports = {};
-const timelineElements = [
+const timelineElements = params => [
   <VerticalTimelineElement
     onTimelineElementClick={() => {
       // eslint-disable-next-line no-alert
@@ -28,6 +28,7 @@ const timelineElements = [
     date="2011 - present"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={<WorkIcon />}
+    {...params}
   >
     <h3 className="vertical-timeline-element-title">Creative Director</h3>
     <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
@@ -41,6 +42,7 @@ const timelineElements = [
     date="2010 - 2011"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={<WorkIcon />}
+    {...params}
   >
     <h3 className="vertical-timeline-element-title">Art Director</h3>
     <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
@@ -53,6 +55,7 @@ const timelineElements = [
     date="2008 - 2010"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={<WorkIcon />}
+    {...params}
   >
     <h3 className="vertical-timeline-element-title">Web Designer</h3>
     <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
@@ -63,6 +66,7 @@ const timelineElements = [
     date="2006 - 2008"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={<WorkIcon />}
+    {...params}
   >
     <h3 className="vertical-timeline-element-title">Web Designer</h3>
     <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
@@ -75,6 +79,7 @@ const timelineElements = [
     date="April 2013"
     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
     icon={<SchoolIcon />}
+    {...params}
   >
     <h3 className="vertical-timeline-element-title">
       Content Marketing for Web, Mobile and Social Media
@@ -87,6 +92,7 @@ const timelineElements = [
     date="November 2012"
     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
     icon={<SchoolIcon />}
+    {...params}
   >
     <h3 className="vertical-timeline-element-title">
       Agile Development Scrum Master
@@ -99,6 +105,7 @@ const timelineElements = [
     date="2002 - 2006"
     iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
     icon={<SchoolIcon />}
+    {...params}
   >
     <h3 className="vertical-timeline-element-title">
       Bachelor of Science in Interactive Digital Media Visual Imaging
@@ -109,6 +116,7 @@ const timelineElements = [
   <VerticalTimelineElement
     iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
     icon={<StarIcon />}
+    {...params}
   />,
 ];
 
@@ -333,13 +341,15 @@ const pages = [
   {
     path: '/demo',
     title: 'Demo',
-    content: () => <VerticalTimeline>{timelineElements}</VerticalTimeline>,
+    content: () => <VerticalTimeline>{timelineElements()}</VerticalTimeline>,
   },
   {
     path: '/demo-single-column-left',
     title: 'Demo single column left',
     content: () => (
-      <VerticalTimeline layout="1-column">{timelineElements}</VerticalTimeline>
+      <VerticalTimeline layout="1-column">
+        {timelineElements()}
+      </VerticalTimeline>
     ),
   },
   {
@@ -368,7 +378,21 @@ const pages = [
     title: 'Demo custom line color',
     content: () => (
       <VerticalTimeline className="vertical-timeline-custom-line">
-        {timelineElements}
+        {timelineElements()}
+      </VerticalTimeline>
+    ),
+  },
+  {
+    path: '/demo-effect',
+    title: 'Demo effect trigger multiple times',
+    content: () => (
+      <VerticalTimeline className="vertical-timeline-custom-line">
+        {timelineElements({
+          intersectionObserverProps: {
+            rootMargin: '0px 0px -40px 0px',
+            triggerOnce: false,
+          },
+        })}
       </VerticalTimeline>
     ),
   },
