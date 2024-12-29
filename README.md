@@ -143,6 +143,10 @@ Choose a color for the timeline (default: `'white'`).
 
 Add extra class name to root div element.
 
+### `triggerOnce={ Boolean }`
+
+Enable or disable effect trigger multiple times (default: false).
+
 ### `contentArrowStyle={ Object }`
 
 Add extra style to content arrow div element.
