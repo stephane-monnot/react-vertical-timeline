@@ -4,6 +4,14 @@
   "description": "Vertical timeline for React.js",
   "main": "dist-modules",
   "module": "dist-es6",
+  "style": "style.min.css",
+  "files": [
+  "dist-es6",
+  "dist-modules",
+  "style.min.css",
+  "style.css",
+  "src"
+],
   "scripts": {
     "start": "vite",
     "test": "jest",
