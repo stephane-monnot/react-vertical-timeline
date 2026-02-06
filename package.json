@@ -1,115 +1,44 @@
 {
   "name": "react-vertical-timeline-component",
-  "description": "Vertical timeline for React.js",
-  "author": "Stéphane Monnot",
-  "user": "stephane-monnot",
   "version": "3.5.2",
+  "description": "Vertical timeline for React.js",
+  "main": "dist-modules",
+  "module": "dist-es6",
   "scripts": {
-    "start": "catalog start docs",
     "test": "jest",
-    "test:coverage": "jest --coverage",
-    "test:watch": "jest --watch",
-    "test:lint": "eslint . --ignore-path .gitignore",
-    "test:lint:fix": "eslint --fix . --ignore-path .gitignore",
-    "gh-pages": "catalog build docs",
-    "gh-pages:deploy": "gh-pages -d docs/build",
     "dist:css": "cleancss -o style.min.css style.css",
     "dist:es6": "del-cli ./dist-es6 && cross-env BABEL_ENV=es6 babel ./src --out-dir ./dist-es6",
     "dist:modules": "del-cli ./dist-modules && cross-env BABEL_ENV=modules babel ./src --out-dir ./dist-modules",
-    "preversion": "npm run test && npm run test:lint",
-    "prepublishOnly": "npm run dist:es6 && npm run dist:modules && npm run dist:css",
-    "postpublish": "npm run gh-pages && npm run gh-pages:deploy",
-    "postinstall": "node lib/post_install.js"
+    "prepublishOnly": "npm run dist:es6 && npm run dist:modules && npm run dist:css"
   },
-  "main": "dist-modules",
-  "module": "dist-es6",
-  "jsnext:main": "dist-es6",
+  "peerDependencies": {
+    "react": "^16.8.6 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+    "react-dom": "^16.8.6 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "prop-types": "^15.8.1",
+    "react-intersection-observer": "^9.5.3"
+  },
   "devDependencies": {
     "@babel/cli": "^7.26.4",
     "@babel/core": "^7.26.0",
-    "@babel/eslint-parser": "^7.5.4",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "@babel/preset-env": "^7.10.1",
+    "@babel/preset-env": "^7.26.0",
     "@babel/preset-react": "^7.26.3",
-    "@material-ui/core": "^4.10.0",
-    "@material-ui/icons": "^4.9.1",
-    "babel-jest": "^27.3.1",
-    "babel-plugin-syntax-trailing-function-commas": "^6.22.0",
-    "catalog": "^3.0.0",
-    "chai": "^4.1.2",
-    "clean-css-cli": "^5.4.2",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "babel-jest": "^30.2.0",
+    "clean-css-cli": "^5.6.3",
     "cross-env": "^7.0.2",
     "del-cli": "^4.0.1",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "eslint": "^8.0.1",
-    "eslint-config-airbnb": "^18.1.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.20.0",
-    "gh-pages": "^3.2.3",
-    "git-prepush-hook": "^1.0.2",
-    "jest": "^27.3.1",
-    "jest-css-modules": "^2.1.0",
-    "prettier": "^2.0.5",
-    "purecss": "^2.0.3",
-    "react": "^17.0.2",
-    "react-addons-test-utils": "^15.6.2",
-    "react-dom": "^17.0.2",
-    "react-github-corner": "^2.3.0",
-    "replace": "^1.2.0",
-    "rimraf": "^3.0.2",
-    "sync-exec": "^0.6.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/stephane-monnot/react-vertical-timeline.git"
-  },
-  "homepage": "https://stephane-monnot.github.io/react-vertical-timeline/",
-  "bugs": {
-    "url": "https://github.com/stephane-monnot/react-vertical-timeline/issues"
-  },
-  "jest": {
-    "collectCoverage": true,
-    "setupFiles": [
-      "<rootDir>/__tests__/shim.js"
-    ],
-    "moduleFileExtensions": [
-      "js",
-      "jsx",
-      "json"
-    ],
-    "modulePathIgnorePatterns": [
-      "<rootDir>/__tests__/shim.js"
-    ],
-    "moduleNameMapper": {
-      "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
-    },
-    "moduleDirectories": [
-      "node_modules",
-      "packages"
-    ]
-  },
-  "keywords": [
-    "react",
-    "reactjs",
-    "React Vertical Timeline"
-  ],
-  "license": "MIT",
-  "pre-push": [
-    "test",
-    "test:lint"
-  ],
-  "dependencies": {
-    "@babel/preset-es2015": "^7.0.0-beta.53",
-    "classnames": "^2.2.6",
-    "react-intersection-observer": "^8.26.2"
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "browserslist": [
-    "last 2 versions",
     "> 1%",
-    "IE 11"
+    "last 2 versions"
   ]
 }
