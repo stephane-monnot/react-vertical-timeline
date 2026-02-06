@@ -213,27 +213,32 @@ Show element by default even if it is outside of the viewport (default: false).
 ## For development
 ### Launch the demo with catalog
 ```code
-$ yarn start
+$ npm start
 ```
 
 ### Run the tests
 ```code
-$ yarn test
+$ npm test
 ```
 
 ### Watch and Run the tests
 ```code
-$ yarn test:watch
+$ npm test -- --watch
 ```
 
 ### Run lint
 ```code
-$ yarn test:lint
+$ npm run lint
 ```
+### Build the library
+```code
+$ npm run dist
+```
+
 
 ### Publish new version (only for maintainers)
 ```code
-$ yarn publish
+$ npm publish
 ```
 
 ## License
