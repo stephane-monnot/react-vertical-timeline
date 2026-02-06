@@ -1,6 +1,6 @@
 {
-  "name": "react-vertical-timeline-component",
-  "version": "3.5.2",
+  "name": "@kiranyela/react-vertical-timeline-component",
+  "version": "4.0.0",
   "description": "Vertical timeline for React.js",
   "main": "dist-modules",
   "module": "dist-es6",
@@ -60,5 +60,12 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "keywords": [
+  "react",
+  "vertical-timeline",
+  "react-vertical-timeline-component",
+  "react-19",
+  "react-19-support"
+]
 }

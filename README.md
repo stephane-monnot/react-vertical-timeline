@@ -1,3 +1,5 @@
+![React 19 Supported](https://img.shields.io/badge/React-19-blue.svg?style=flat-square&logo=react)
+
 [![build status](https://secure.travis-ci.org/stephane-monnot/react-vertical-timeline.svg)](http://travis-ci.org/stephane-monnot/react-vertical-timeline) [![Dependency Status](https://david-dm.org/stephane-monnot/react-vertical-timeline.svg)](https://david-dm.org/stephane-monnot/react-vertical-timeline)
 
 # react-vertical-timeline-component - Vertical timeline for React.js
