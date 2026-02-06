@@ -211,10 +211,7 @@ Show element by default even if it is outside of the viewport (default: false).
 
 
 ## For development
-### Launch the demo with catalog
-```code
-$ npm start
-```
+
 
 ### Run the tests
 ```code
