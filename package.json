@@ -1,6 +1,6 @@
 {
-  "name": "@kiranyela/react-vertical-timeline-component",
-  "version": "4.0.3",
+  "name": "react-vertical-timeline-component",
+  "version": "3.5.2",
   "description": "Vertical timeline for React.js",
   "main": "dist-modules",
   "module": "dist-es6",
