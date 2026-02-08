@@ -1,3 +1,5 @@
+![React 19 Supported](https://img.shields.io/badge/React-19-blue.svg?style=flat-square&logo=react)
+
 [![build status](https://secure.travis-ci.org/stephane-monnot/react-vertical-timeline.svg)](http://travis-ci.org/stephane-monnot/react-vertical-timeline) [![Dependency Status](https://david-dm.org/stephane-monnot/react-vertical-timeline.svg)](https://david-dm.org/stephane-monnot/react-vertical-timeline)
 
 # react-vertical-timeline-component - Vertical timeline for React.js
@@ -211,29 +213,35 @@ Show element by default even if it is outside of the viewport (default: false).
 
 
 ## For development
-### Launch the demo with catalog
+### Launch the Demo
+
 ```code
-$ yarn start
+$ npm start
 ```
 
 ### Run the tests
 ```code
-$ yarn test
+$ npm test
 ```
 
 ### Watch and Run the tests
 ```code
-$ yarn test:watch
+$ npm test -- --watch
 ```
 
 ### Run lint
 ```code
-$ yarn test:lint
+$ npm run lint
 ```
+### Build the library
+```code
+$ npm run dist
+```
+
 
 ### Publish new version (only for maintainers)
 ```code
-$ yarn publish
+$ npm publish
 ```
 
 ## License

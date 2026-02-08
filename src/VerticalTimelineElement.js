@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -57,26 +58,14 @@ const VerticalTimelineElement = ({
           <div
             style={contentStyle}
             onClick={onTimelineElementClick}
-            className={classNames(
-              textClassName,
-              'vertical-timeline-element-content',
-              {
-                'bounce-in': inView || visible,
-                'is-hidden': !(inView || visible),
-              }
-            )}
+            className={classNames(textClassName, 'vertical-timeline-element-content', {
+              'bounce-in': inView || visible,
+              'is-hidden': !(inView || visible),
+            })}
           >
-            <div
-              style={contentArrowStyle}
-              className="vertical-timeline-element-content-arrow"
-            />
+            <div style={contentArrowStyle} className="vertical-timeline-element-content-arrow" />
             {children}
-            <span
-              className={classNames(
-                dateClassName,
-                'vertical-timeline-element-date'
-              )}
-            >
+            <span className={classNames(dateClassName, 'vertical-timeline-element-date')}>
               {date}
             </span>
           </div>
@@ -87,10 +76,7 @@ const VerticalTimelineElement = ({
 );
 
 VerticalTimelineElement.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]),
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
   className: PropTypes.string,
   contentArrowStyle: PropTypes.shape({}),
   contentStyle: PropTypes.shape({}),
