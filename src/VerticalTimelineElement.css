@@ -52,7 +52,7 @@
   left: unset;
 }
 
-.vertical-timeline-element-icon svg {
+.vertical-timeline-element-icon * {
   display: block;
   width: 24px;
   height: 24px;
