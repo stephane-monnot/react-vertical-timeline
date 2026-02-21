@@ -29,6 +29,9 @@
 }
 
 .vertical-timeline-element-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -56,11 +59,6 @@
   display: block;
   width: 24px;
   height: 24px;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  margin-left: -12px;
-  margin-top: -12px;
 }
 
 @media only screen and (min-width: 1170px) {
